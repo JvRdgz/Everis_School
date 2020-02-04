@@ -1,0 +1,46 @@
+package clases;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Cliente {
+	static String HOST = "localhost";
+	static int PUERTO = 5000;
+	Socket socket;
+	DataOutputStream salida;
+	DataInputStream entrada;
+	String mensajeRecibido;
+
+	public void initCliente() {
+		Scanner sc = new Scanner(System.in);
+		int op = 0;
+		try {
+			socket = new Socket(HOST, PUERTO);
+
+			salida = new DataOutputStream(socket.getOutputStream());
+
+			entrada = new DataInputStream(socket.getInputStream());
+
+			System.out.println("Introduzca una opcion: ");
+			do {
+				
+				System.out.println("1.- Reservar Billete");
+				System.out.println("2.- Chat");
+				System.out.println("0.-Salir");
+				
+				op = Integer.parseInt(sc.nextLine());
+				
+				// Este mensaje se lo manda al sevidor dado que se lo manda por el flujo 'salida'.
+				salida.writeUTF("El cliente dice: \n" + op + "\n\nEcriba su respueta: ");
+				mensajeRecibido = entrada.readUTF();
+				System.out.println(mensajeRecibido);
+			} while (op != 0);
+			socket.close();
+			sc.close();
+		} catch (Exception e) {
+
+		}
+	}
+}

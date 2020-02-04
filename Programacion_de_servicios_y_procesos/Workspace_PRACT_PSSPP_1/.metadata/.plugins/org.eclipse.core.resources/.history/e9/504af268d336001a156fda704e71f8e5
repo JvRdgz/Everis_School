@@ -1,0 +1,68 @@
+package hilos;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Hilo implements Runnable {
+
+	private File file;
+	private String nombre_hilo;
+	private String prioridad;
+
+	public Hilo(File file, String nombre_hilo, String prioridad) {
+		super();
+		this.file = file;
+		this.nombre_hilo = nombre_hilo;
+		this.prioridad = prioridad;
+	}
+
+	@Override
+	public void run() {
+		try {
+			BufferedWriter bw = new BufferedWriter(new FileWriter((".\\" + file), true));
+			int cont = 0;
+			while (cont < 101) {
+				bw.write("Soy el hilo " + this.nombre_hilo + ", mi prioridad es " + this.prioridad
+						+ " y estoy escribiendo en el fichero " + this.file.getName());
+				bw.newLine();
+				cont++;
+			}
+			System.out.println("\n\tHilo " + this.nombre_hilo + " finalizado.");
+			bw.close();
+		} catch (IOException e) {
+			System.err.println("\nERROR EN LA LECTURA DE DATOS.");
+			e.printStackTrace();
+		}
+	}
+
+	public File getFile() {
+		return file;
+	}
+
+	public void setFile(File file) {
+		this.file = file;
+	}
+
+	public String getNombre_hilo() {
+		return nombre_hilo;
+	}
+
+	public void setNombre_hilo(String nombre_hilo) {
+		this.nombre_hilo = nombre_hilo;
+	}
+
+	public String getPrioridad() {
+		return prioridad;
+	}
+
+	public void setPrioridad(String prioridad) {
+		this.prioridad = prioridad;
+	}
+
+	@Override
+	public String toString() {
+		return "Hilo [file=" + file + ", nombre_hilo=" + nombre_hilo + ", prioridad=" + prioridad + "]";
+	}
+}

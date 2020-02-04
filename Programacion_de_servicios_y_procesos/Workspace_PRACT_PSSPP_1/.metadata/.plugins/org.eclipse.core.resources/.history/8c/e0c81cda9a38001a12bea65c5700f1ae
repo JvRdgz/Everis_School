@@ -1,0 +1,54 @@
+package clases;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Servidor {
+	static int PUERTO = 5000;
+	ServerSocket serverSocket;
+	Socket socket;
+	DataOutputStream salida;
+	DataInputStream entrada;
+	String mensajeRecibido;
+
+	public void initServidor() {
+		Scanner sc = new Scanner(System.in);
+		int op = 0;
+		try {
+			serverSocket = new ServerSocket(PUERTO);
+			socket = new Socket();
+
+			System.out.println("Esperando conexion...");
+			socket = serverSocket.accept();
+			System.out.println("Se ha conectado un cliente... Esperando a recibir mensaje");
+			do {
+				
+				System.out.println("1.- Reservar Billete");
+				System.out.println("2.- Chat");
+				System.out.println("0.-Salir");
+
+				entrada = new DataInputStream(socket.getInputStream());
+				salida = new DataOutputStream(socket.getOutputStream());
+
+				String msn = "";
+
+				while (!msn.equals("x")) {
+
+					mensajeRecibido = entrada.readUTF();
+					System.out.println(mensajeRecibido);
+
+					op = Integer.parseInt(sc.nextLine());
+					salida.writeUTF("El servicio tecnico dice: \n" + msn + "\n\nEscriba su respuesta (Servidor).");
+
+				}
+			} while (op != 0);
+			serverSocket.close();
+			sc.close();
+		} catch (Exception e) {
+
+		}
+	}
+}

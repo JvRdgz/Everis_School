@@ -1,0 +1,16 @@
+package main;
+
+import clases.MenuPrincipal;
+import clases.Servidor;
+
+public class AplicacionServidor {
+
+	public static void main(String[] args) {
+		Servidor servidor = new Servidor();
+		MenuPrincipal.inicializarVagon();
+		MenuPrincipal.mostrarVagon();
+		System.out.println("Iniciando servidor\n");
+		servidor.initServidor();
+	}
+
+}

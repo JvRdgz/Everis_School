@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/home/jarodrig/Escritorio/Everis_School/Acceso_a_datos/Workspace_PRACT_AADD_1/.metadata/.plugins/org.eclipse.jdt.core
+3069243420.index
+1334774838.index
+3082217694.index
+3330985468.index
+404025908.index

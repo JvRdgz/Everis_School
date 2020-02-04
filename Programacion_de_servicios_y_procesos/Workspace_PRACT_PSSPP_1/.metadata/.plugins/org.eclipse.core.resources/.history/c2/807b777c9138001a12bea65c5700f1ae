@@ -1,0 +1,44 @@
+package clases;
+
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Cliente {
+
+	private final int PUERTO = 1234;
+	private final String HOST = "localhost";
+	protected String mensajeServidor;
+	private Socket cs;
+	private DataOutputStream salidaServidor;
+
+	public void iniciarCliente() {
+		Scanner sc = new Scanner(System.in);
+		try {
+			cs = new Socket(HOST, PUERTO);
+			System.out.println("Conexion realizada correctamente.\n");
+
+			salidaServidor = new DataOutputStream(cs.getOutputStream());
+
+			BufferedReader entrada = new BufferedReader(new InputStreamReader(cs.getInputStream()));
+
+			mensajeServidor = entrada.readLine();
+			System.out.println("Mensaje recibido por el servidor: " + mensajeServidor);
+
+			do {
+				System.out.println("Introduzca su mensaje:");
+				mensajeServidor = sc.nextLine();
+
+				salidaServidor.writeUTF(mensajeServidor + "\n");
+
+			} while (!mensajeServidor.equalsIgnoreCase("salir"));
+			System.out.println("\nConexion finalizada");
+			cs.close();
+		} catch (Exception e) {
+			System.err.println("\nERROR");
+		}
+	}
+}

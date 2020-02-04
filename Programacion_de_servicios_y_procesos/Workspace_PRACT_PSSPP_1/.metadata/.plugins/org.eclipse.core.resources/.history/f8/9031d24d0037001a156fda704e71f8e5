@@ -1,0 +1,22 @@
+package clases;
+
+public class ContadorSincronizado {
+
+	private int cont;
+
+	public ContadorSincronizado(int con) {
+		this.cont = con;
+	}
+
+	synchronized public int getCont() {
+		return cont;
+	}
+
+	synchronized public void incrementar() {
+		this.cont++;
+	}
+
+	synchronized public void decrementar() {
+		this.cont--;
+	}
+}

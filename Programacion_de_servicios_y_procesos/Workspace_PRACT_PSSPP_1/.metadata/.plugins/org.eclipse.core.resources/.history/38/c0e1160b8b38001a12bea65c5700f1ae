@@ -1,0 +1,15 @@
+package clases;
+
+import java.io.DataOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Cliente {
+
+	private final int PUERTO = 1234; // Puerto para la conexion
+	private final String HOST = "localhost"; // Host para la conexion
+	protected String mensajeServidor; // Mensajes entrantes en el servidor
+	private ServerSocket ss; // Socket del servidor
+	private Socket cs; // Socket del cliente
+	private DataOutputStream salidaServidor; // Flujo de datos
+}

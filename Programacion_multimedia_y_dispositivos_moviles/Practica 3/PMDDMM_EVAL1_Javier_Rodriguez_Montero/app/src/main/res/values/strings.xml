@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PMDDMM_EVAL1_Javier_Rodriguez_Montero</string>
+    // ASIGNACION DE LOS ITEM DEL MENU AL string.xml
+    <string name="item1">Formulario de reserva</string>
+    <string name="item2">Web de la escuela</string>
+    <string name="item3">Mapa</string>
+    // CAMPOS Y BOTONES PARA EL FORMULARIO
+    <string name="txt_view1">FORMULARIO</string>
+    <string name="editText1">Nombre</string>
+    <string name="editText2">Apellidos</string>
+    <string name="editText3">Telefono</string>
+    <string name="editText4">Comentarios</string>
+    <string name="button">Alta</string>
+
+</resources>

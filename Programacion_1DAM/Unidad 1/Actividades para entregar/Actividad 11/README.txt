@@ -1,0 +1,1 @@
+Cada una de las carpetas es el paquete del proyecto.

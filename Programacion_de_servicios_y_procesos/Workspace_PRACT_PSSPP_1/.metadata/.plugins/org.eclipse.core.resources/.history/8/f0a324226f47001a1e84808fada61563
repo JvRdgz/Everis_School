@@ -1,0 +1,14 @@
+package clases;
+
+import javax.swing.JApplet;
+
+public class Prueba extends JApplet {
+
+	/**
+	 * Create the applet.
+	 */
+	public Prueba() {
+
+	}
+
+}

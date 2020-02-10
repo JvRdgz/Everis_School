@@ -52,6 +52,7 @@ public class Main {
 	static String ruta = "." + File.separator + "Files" + File.separator;
 	static File directorio = new File(ruta);
 	static String fichero_xml = ruta + "preguntas.xml";
+	static String fichero_preguntas = ruta + "Preguntas.txt";
 	static Document documento_xml;
 	static boolean cargadoDocumento = false;
 
@@ -99,7 +100,7 @@ public class Main {
 				break;
 			case 3:
 				// System.out.println("\n\tNO DISPONIBLE ACTUALMENTE.\n");
-				exportar_preguntas(fichero_xml);
+				exportar_preguntas(fichero_xml, fichero_preguntas);
 				break;
 			case 4:
 				instrucciones();
@@ -122,17 +123,26 @@ public class Main {
 		} while (op != 0 || exit.equalsIgnoreCase("N"));
 	}
 
-	private static void exportar_preguntas(String fichero_xml) {
+	private static void exportar_preguntas(String fichero_xml, String fichero_preguntas) {
 		File f = new File(fichero_xml);
 		if (!f.exists()) {
 			try {
 				f.createNewFile();
 			} catch (IOException e1) {
-				System.err.println("\nERROR AL CREAR EL ARCHIVO.");
+				System.err.println("\nERROR AL CREAR EL ARCHIVO XML.");
 				e1.printStackTrace();
 			}
 		}
-		Pregunta.escribir_XML(f);
+		File f2 = new File(fichero_preguntas);
+		if (!f.exists()) {
+			try {
+				f.createNewFile();
+			} catch (IOException e1) {
+				System.err.println("\nERROR AL CREAR EL ARCHIVO Preguntas.txt.");
+				e1.printStackTrace();
+			}
+		}
+		Pregunta.escribir_XML(f, f2);
 	}
 
 	private static void mostrar_informe(String nombre, int puntuacion, int preguntas_acertadas) {
@@ -235,6 +245,7 @@ public class Main {
 		}
 	}
 
+	// METODO DE INSERCION PARA ORDENAR ARRAY
 	/*
 	 * private static void insercion(int[] array) { for (int i = 1; i <
 	 * array.length; i++) { int aux = array[i]; int j; for (j = i - 1; j >= 0 &&
@@ -401,15 +412,6 @@ public class Main {
 						s = br.readLine();
 					}
 				}
-
-				/*
-				 * bw.write(nombre); bw.write(":"); bw.write(puntuacion); bw.newLine();
-				 */
-				/*
-				 * System.out.println("MOSTRANDO ARRAYLIST"); for (int i = 0; i <
-				 * preguntas.size(); i++) { System.out.println((i + 1) + ".- " +
-				 * preguntas.get(i)); }
-				 */
 				bw.close();
 				br.close();
 				mostrar_informe(j.getNombre(), j.getPuntuacion(), j.getNum_pregunta_fallada());
@@ -447,123 +449,6 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
-
-	/*
-	 * public static void crearXML() {
-	 * 
-	 * File f = new File(ruta + "\\preguntas.xml"); if (!f.exists()) { try {
-	 * f.createNewFile(); } catch (IOException e) {
-	 * System.err.println("\nERROR AL CREAR EL ARCHIVO."); e.printStackTrace(); } }
-	 * 
-	 * try { DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-	 * DocumentBuilder builder = factory.newDocumentBuilder(); documento =
-	 * builder.newDocument(); Element raiz = documento.createElement("preguntas");
-	 * documento.appendChild(raiz); cargadoDocumento = true;
-	 * 
-	 * TransformerFactory transformerFactory = TransformerFactory.newInstance();
-	 * Transformer transformer = transformerFactory.newTransformer(); DOMSource
-	 * source = new DOMSource(documento); StreamResult result = new StreamResult(f);
-	 * 
-	 * 
-	 * // NO HA FUNCIONADO, EL XML SE CREA VACIO // transformer.transform(source,
-	 * result); } catch (ParserConfigurationException e) {
-	 * System.err.println("\nError en la configuracion del parser.");
-	 * e.printStackTrace(); }
-	 * 
-	 * } catch (TransformerConfigurationException e) { System.err.
-	 * println("\nError en la configuracion de la transformacion del archivo.");
-	 * e.printStackTrace(); } catch (TransformerException e) {
-	 * System.err.println("\nError en la transformacion del archivo.");
-	 * e.printStackTrace(); }
-	 * 
-	 * }
-	 */
-
-	/*
-	 * private void leerXML(InputStream entrada) throws Exception {
-	 * DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
-	 * DocumentBuilder constructor = fabrica.newDocumentBuilder(); documento =
-	 * constructor.parse(entrada); cargadoDocumento = true; }
-	 */
-
-	/*
-	 * private static void exportar_preguntas(ArrayList<Pregunta> preguntas) { File
-	 * f = new File(ruta + "\\Preguntas.txt"); Pregunta p; File f2 = new File(ruta +
-	 * "\\preguntas.xml");
-	 * 
-	 * if (!f.exists()) { try { f.createNewFile(); } catch (IOException e) {
-	 * System.err.println("\nERROR AL CREAR EL ARCHIVO."); e.printStackTrace(); } }
-	 * if (!f2.exists()) { try { f2.createNewFile(); } catch (IOException e) {
-	 * System.err.println("\nERROR AL CREAR EL ARCHIVO."); e.printStackTrace(); } }
-	 * try { DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-	 * DocumentBuilder builder = factory.newDocumentBuilder(); documento_xml =
-	 * builder.newDocument(); Element raiz =
-	 * documento_xml.createElement("preguntas"); documento_xml.appendChild(raiz);
-	 * cargadoDocumento = true;
-	 * 
-	 * TransformerFactory transformerFactory = TransformerFactory.newInstance();
-	 * Transformer transformer = transformerFactory.newTransformer();
-	 * 
-	 * BufferedReader br = new BufferedReader(new FileReader(f)); String s =
-	 * br.readLine(); while (s != null) { String[] s_parts = s.split("#"); p = new
-	 * Pregunta(s_parts[0], s_parts[1], s_parts[2], s_parts[3], s_parts[4]);
-	 * 
-	 * // nuevo(s_parts[0], s_parts[1], s_parts[2], s_parts[3], s_parts[4]);
-	 * 
-	 * // INSERTAR LAS PREGUNTAS EN EL preguntas.xml
-	 * 
-	 * DOMSource source = new DOMSource(documento_xml); StreamResult result = new
-	 * StreamResult(f); transformer.transform(source, result); s = br.readLine();
-	 * 
-	 * s = br.readLine(); } br.close(); } catch (FileNotFoundException e1) {
-	 * System.err.println("\nERROR AL ABRIR EL ARCHIVO."); e1.printStackTrace(); }
-	 * catch (IOException e) {
-	 * System.err.println("\nERROR EN LA LECTURA DE DATOS."); e.printStackTrace(); }
-	 * catch (ParserConfigurationException e) {
-	 * System.err.println("\nError en la configuracion del parser.");
-	 * e.printStackTrace(); } catch (TransformerConfigurationException e) {
-	 * System.err.println("\nError en la configuracion de la transformacion.");
-	 * e.printStackTrace(); } catch (TransformerException e) {
-	 * System.err.println("\nError en la transformacion del archivo.");
-	 * e.printStackTrace(); }
-	 * 
-	 * }
-	 */
-
-	/*
-	 * private static void nuevo(String string, String string2, String string3,
-	 * String string4, String string5) { Element pregunta =
-	 * documento.createElement("pregunta"); pregunta.setAttribute("pregunta",
-	 * string);
-	 * 
-	 * Element resp1 = documento.createElement("posible_respuesta_1"); Text texto =
-	 * documento.createTextNode(string2); resp1.appendChild(texto);
-	 * pregunta.appendChild(resp1);
-	 * 
-	 * Element resp2 = documento.createElement("posible_respuesta_2"); texto =
-	 * documento.createTextNode(string3); resp2.appendChild(texto);
-	 * pregunta.appendChild(resp2);
-	 * 
-	 * Element resp3 = documento.createElement("posible_respuesta_3"); texto =
-	 * documento.createTextNode(string4); resp3.appendChild(texto);
-	 * pregunta.appendChild(resp3);
-	 * 
-	 * Element respCorrecta = documento.createElement("respuesta_correcta"); texto =
-	 * documento.createTextNode(string5); respCorrecta.appendChild(texto);
-	 * pregunta.appendChild(respCorrecta);
-	 * 
-	 * Element raiz = documento.getDocumentElement(); raiz.appendChild(pregunta); }
-	 */
-
-	/*
-	 * private static void escribirXML(OutputStream salida) throws Exception {
-	 * TransformerFactory factory = TransformerFactory.newInstance(); Transformer
-	 * transformador = factory.newTransformer();
-	 * transformador.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
-	 * transformador.setOutputProperty(OutputKeys.INDENT, "yes"); DOMSource fuente =
-	 * new DOMSource(documento); StreamResult resultado = new StreamResult(salida);
-	 * transformador.transform(fuente, resultado); }
-	 */
 
 	private static void instrucciones() {
 		System.out.println("\n\n\t\tINSTRUCCIONES DEL JUEGO\n\n");

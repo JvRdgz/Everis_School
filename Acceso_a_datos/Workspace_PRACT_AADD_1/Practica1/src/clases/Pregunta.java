@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.output.Format;
@@ -37,31 +39,19 @@ public class Pregunta {
 		this.respuesta_correcta = respuesta_correcta;
 	}
 
-	public static void escribir_XML(File f) {
+	public static void escribir_XML(File f_preguntas_xml, File f_preguntas_txt) {
 
 		try {
+			Pregunta p;
 
-			BufferedReader br = new BufferedReader(new FileReader(f));
+			BufferedReader br = new BufferedReader(new FileReader(f_preguntas_txt));
 
 			String s = br.readLine();
-			while (s != null) {
-				// TENGO QUE LEER EN EL FICHERO Preguntas.txt, y crear un objeto Pregunta.
-				// Para ello, tengo que separar por cada linea del fichero, los atributos
-				// correspondientes a Pregunta.
-				// Esto es necesario porque necesito extraer los campos de la pregunta por
-				// separado para despues, mas abajo, crear las etiquetas del XML.
-				/*
-				 * if (s.contains(j.getNombre())) { String[] datos_records = s.split(":"); //
-				 * System.out.println(datos_records[1]); int puntuacion_fichero =
-				 * Integer.parseInt(datos_records[1]); if (j.getPuntuacion() >
-				 * puntuacion_fichero) { bw = new BufferedWriter(new FileWriter(ruta +
-				 * "records.txt")); bw.write(j.getNombre() + ":" + j.getPuntuacion()); } break;
-				 * }
-				 */
-				s = br.readLine();
-
-			}
-			br.close();
+			// TENGO QUE LEER EN EL FICHERO Preguntas.txt, y crear un objeto Pregunta.
+			// Para ello, tengo que separar por cada linea del fichero, los atributos
+			// correspondientes a Pregunta.
+			// Esto es necesario porque necesito extraer los campos de la pregunta por
+			// separado para despues, mas abajo, crear las etiquetas del XML.
 
 			String docNuevoStr = "";
 
@@ -70,22 +60,31 @@ public class Pregunta {
 			Element nodoRaiz = new Element("preguntas");
 			docNuevo.addContent(nodoRaiz);
 
-			Element nodoPregunta = new Element("pregunta");
-			nodoRaiz.addContent(nodoPregunta);
-			// En vez de this.pregunta, seria p.getPregunta();
-			// nodoPregunta.setText(this.pregunta);
+			while (s != null) {
+				String[] s_parts = s.split("#");
+				p = new Pregunta(s_parts[0], s_parts[1], s_parts[2], s_parts[3], s_parts[4]);
 
-			Format format = Format.getPrettyFormat();
+				Element nodoPregunta = new Element("pregunta");
 
-			XMLOutputter xmloutputter = new XMLOutputter(format);
+				nodoRaiz.addContent(nodoPregunta);
 
-			docNuevoStr = xmloutputter.outputString(docNuevo);
+				nodoPregunta.setText(p.getPregunta());
+				Format format = Format.getPrettyFormat();
 
+				XMLOutputter xmloutputter = new XMLOutputter(format);
+
+				docNuevoStr = xmloutputter.outputString(docNuevo);
+
+				s = br.readLine();
+
+			}
 			System.out.println(docNuevoStr);
+
+			br.close();
 
 			FileWriter fichero = null;
 
-			fichero = new FileWriter(f);
+			fichero = new FileWriter(f_preguntas_xml);
 			PrintWriter pw = new PrintWriter(fichero);
 			pw.println(docNuevoStr);
 

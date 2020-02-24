@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-<entry loc="C:\Program Files\Java\jre1.8.0_191" stamp="1540732266656"/>
-<entry loc="C:\Program Files\Java\jre1.8.0_151" stamp="1512323281531"/>
+    <entry loc="C:\Program Files\Java\jre1.8.0_191" stamp="1540732266656"/>
+    <entry loc="/usr/lib/jvm/java-11-openjdk-amd64" stamp="1580578347568"/>
+    <entry loc="C:\Program Files\Java\jre1.8.0_151" stamp="1512323281531"/>
 </dirs>

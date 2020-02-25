@@ -182,3 +182,677 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-02-24 13:41:54.581
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+!SESSION 2020-02-25 13:01:15.868 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-02-25 13:02:39.625
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\javie'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-02-25 13:07:43.285 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-02-25 13:08:30.849
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\javie'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-02-25 13:10:50.430 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-02-25 13:11:12.224
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\javie'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2020-02-25 13:56:39.959
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2020-02-25 13:56:39.959
+!MESSAGE session context was:(profile=C__Users_javie_eclipse_java-latest-released_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.core,1.8.1.v20191107-0507
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.ui,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.java,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.ui,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.layout.group,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os.win32,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.SWT_AWT,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.emf,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.nebula,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.swing2swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.java6,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.jsr296,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt.widgets.baseline,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.epp.mpc,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.java.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.ui.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.xml.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.layout.group.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.959
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.SWT_AWT_support,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.964
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.964
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.964
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.964
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.964
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swt.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.964
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.xwt.feature,1.9.3.202001230951
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2020-02-25 13:56:39.995
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2020-02-25 13:56:39.995
+!MESSAGE session context was:(profile=C__Users_javie_eclipse_java-latest-released_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.core,1.8.1.v20191107-0507
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.ui,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.java,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.ui,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.layout.group,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os.win32,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.SWT_AWT,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.emf,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.nebula,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.swing2swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.java6,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.jsr296,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt.widgets.baseline,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.epp.mpc,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.java.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.ui.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.xml.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.layout.group.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.SWT_AWT_support,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swt.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 13:56:39.995
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.xwt.feature,1.9.3.202001230951
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2020-02-25 14:11:22.415
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2020-02-25 14:11:22.415
+!MESSAGE session context was:(profile=C__Users_javie_eclipse_java-latest-released_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.core,1.8.1.v20191107-0507
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.ui,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.java,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.ui,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.layout.group,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os.win32,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.415
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.SWT_AWT,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.424
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.425
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.emf,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.425
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.nebula,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.swing2swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.java6,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.jsr296,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt.widgets.baseline,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.epp.mpc,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.java.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.ui.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.xml.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.layout.group.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.SWT_AWT_support,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swt.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.426
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.xwt.feature,1.9.3.202001230951
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2020-02-25 14:11:22.479
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2020-02-25 14:11:22.479
+!MESSAGE session context was:(profile=C__Users_javie_eclipse_java-latest-released_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.core,1.8.1.v20191107-0507
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.ui,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.java,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.ui,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.layout.group,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os.win32,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.SWT_AWT,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.emf,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.nebula,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.swing2swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.java6,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.jsr296,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt.widgets.baseline,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.epp.mpc,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.java.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.ui.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.xml.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.layout.group.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.SWT_AWT_support,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swt.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:11:22.479
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.xwt.feature,1.9.3.202001230951
+!SESSION 2020-02-25 14:11:40.856 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/javie/Desktop/Curso/Everis_School/Programacion_de_servicios_y_procesos/Workspace/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-02-25 14:12:02.667
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\javie'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2020-02-25 14:18:33.985
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2020-02-25 14:18:33.985
+!MESSAGE session context was:(profile=C__Users_javie_eclipse_java-latest-released_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.core,1.8.1.v20191107-0507
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.ui,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.java,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.ui,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.layout.group,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os.win32,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.SWT_AWT,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.emf,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.nebula,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.swing2swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.java6,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.jsr296,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt.widgets.baseline,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.epp.mpc,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.java.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.ui.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.xml.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.layout.group.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.SWT_AWT_support,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swt.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:33.985
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.xwt.feature,1.9.3.202001230951
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2020-02-25 14:18:34.045
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2020-02-25 14:18:34.045
+!MESSAGE session context was:(profile=C__Users_javie_eclipse_java-latest-released_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.core,1.8.1.v20191107-0507
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.epp.mpc.ui,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.databinding.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.java,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.ui,1.10.0.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.core.xml,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.layout.group,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.os.win32,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.SWT_AWT,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.emf,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.databinding.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.nebula,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.rcp.swing2swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.runtime.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.FormLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.MigLayout.lib,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.databinding,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.doc.user,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.java6,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swing.jsr296,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.swt.widgets.baseline,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.045
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wb.xwt,1.9.1.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.epp.mpc,1.8.1.v20191119-1757
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.java.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.ui.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.core.xml.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.layout.group.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.SWT_AWT_support,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.rcp.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.doc.user.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swing.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.swt.feature,1.9.3.202001230951
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-02-25 14:18:34.056
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wb.xwt.feature,1.9.3.202001230951

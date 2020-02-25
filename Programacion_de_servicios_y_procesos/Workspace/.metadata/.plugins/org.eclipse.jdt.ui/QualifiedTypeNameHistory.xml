@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.cliente.HiloLeerCliente"/>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.cliente.HiloEscribirCliente"/>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Ventanas.VentanaCliente"/>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Sincronizacion.OperacionesSincronizadas"/>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Ventanas.VentanaServidor"/>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.servidor.HiloGestionConexionClienteEscribir"/>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.servidor.HiloGestionConexionClienteLeer"/>
+<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Servidor.Servidor"/>
+<fullyQualifiedTypeName name="everisclase2.programacionservidores.EstructuraFicheros"/>
+</qualifiedTypeNameHistroy>

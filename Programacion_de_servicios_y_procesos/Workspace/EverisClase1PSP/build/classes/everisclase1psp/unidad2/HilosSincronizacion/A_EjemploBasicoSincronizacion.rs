@@ -1,0 +1,7 @@
+everisclase1psp.unidad2.HilosSincronizacion.HIlo2
+everisclase1psp.unidad2.HilosSincronizacion.TestSynchronization1
+everisclase1psp.unidad2.HilosSincronizacion.MyThread6
+everisclase1psp.unidad2.HilosSincronizacion.Tabla
+everisclase1psp.unidad2.HilosSincronizacion.MyThread5
+everisclase1psp.unidad2.HilosSincronizacion.Hilo1
+everisclase1psp.unidad2.HilosSincronizacion.Table10

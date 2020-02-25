@@ -1,0 +1,4 @@
+everisclase1psp.unidad2.HilosSincronizacion.Test$2
+everisclase1psp.unidad2.HilosSincronizacion.Test$1
+everisclase1psp.unidad2.HilosSincronizacion.Customer
+everisclase1psp.unidad2.HilosSincronizacion.Test

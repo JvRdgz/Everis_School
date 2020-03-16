@@ -62,7 +62,7 @@ public class A_1EnviarMail {
 			// Utilizamos un objeto transport para hacer el envio indicando el protocolo
 			Transport t = sesion.getTransport("smtp");
 			// Hacemos la conexion
-			t.connect("se.sale2020@gmail.com", "tucontraseña");
+			t.connect("se.sale2020@gmail.com", "Puertoseguro3418");
 			// Enviamos el mensaje
 			t.sendMessage(mensaje, mensaje.getAllRecipients());
 

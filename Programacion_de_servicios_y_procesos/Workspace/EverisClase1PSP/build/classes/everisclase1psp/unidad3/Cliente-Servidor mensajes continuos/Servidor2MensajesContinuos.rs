@@ -1,3 +1,0 @@
-everispracticapsp.enunciado2Inicial.Servidor2MensajesContinuos
-everispracticapsp.enunciado2Inicial.hiloLee2
-everispracticapsp.enunciado2Inicial.hiloEscribe2

@@ -1,2 +1,0 @@
-everisclase1psp.unidad2.HilosBasico.TestShutdown1
-everisclase1psp.unidad2.HilosBasico.MyThread

@@ -1,3 +1,0 @@
-everispracticapsp.enunciado2Inicial.hiloEscribe
-everispracticapsp.enunciado2Inicial.Cliente2MensajesContinuos
-everispracticapsp.enunciado2Inicial.hiloLee

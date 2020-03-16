@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.cliente.HiloLeerCliente"/>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.cliente.HiloEscribirCliente"/>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Ventanas.VentanaCliente"/>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Sincronizacion.OperacionesSincronizadas"/>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Ventanas.VentanaServidor"/>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.servidor.HiloGestionConexionClienteEscribir"/>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.servidor.HiloGestionConexionClienteLeer"/>
-<fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Servidor.Servidor"/>
-<fullyQualifiedTypeName name="everisclase2.programacionservidores.EstructuraFicheros"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.cliente.HiloLeerCliente"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.cliente.HiloEscribirCliente"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Ventanas.VentanaCliente"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Sincronizacion.OperacionesSincronizadas"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Ventanas.VentanaServidor"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.servidor.HiloGestionConexionClienteEscribir"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Hilos.servidor.HiloGestionConexionClienteLeer"/>
+    <fullyQualifiedTypeName name="everisclase1pspChatConPantallas.Servidor.Servidor"/>
+    <fullyQualifiedTypeName name="everisclase2.programacionservidores.EstructuraFicheros"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+    <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="java.util.logging.Level"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="pedir_obtener.PideFichero"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="pedir_obtener_enviar.EnviaFichero"/>
+    <fullyQualifiedTypeName name="pedir_obtener_enviar.ObtieneFichero"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="servidor.EstructuraFicheros"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
 </qualifiedTypeNameHistroy>

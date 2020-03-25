@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -29,6 +28,9 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 import clases.Jugador;
 import clases.Pregunta;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
 import pdf_content.PDFHeaderFooter;
 
 public class Main {
@@ -37,6 +39,7 @@ public class Main {
 	static String ruta = "." + File.separator + "Files" + File.separator;
 	static File directorio = new File(ruta);
 	static String fichero_xml = ruta + "preguntas.xml";
+	static String fichero_xls = ruta + "preguntas.xls";
 	static String fichero_preguntas = ruta + "Preguntas.txt";
 	static Document documento_xml;
 	static boolean cargadoDocumento = false;
@@ -91,8 +94,8 @@ public class Main {
 				instrucciones();
 				break;
 			case 5:
-				System.out.println("\n\tNO DISPONIBLE ACTUALMENTE.\n");
-				// importar_preguntas();
+				// System.out.println("\n\tNO DISPONIBLE ACTUALMENTE.\n");
+				importar_preguntas();
 				break;
 			case 6:
 				visualizar_records();
@@ -449,10 +452,43 @@ public class Main {
 		System.out.println("\t\t por cada pregunta mal contestada, el jugador perdera 5 puntos.\n\n");
 	}
 
-	/*
-	 * private static void importar_preguntas() { // TODO Auto-generated method stub
-	 * 
-	 * }
-	 */
+	private static void importar_preguntas() {
+		File preguntas_txt = new File(fichero_preguntas);
+		File preguntas_xls = new File(fichero_xls);
+		if (!preguntas_txt.exists()) {
+			try {
+				preguntas_txt.createNewFile();
+			} catch (IOException e) {
+				System.err.println("\nERROR AL CREAR EL ARCHIVO.");
+				e.printStackTrace();
+			}
+		}
+		if (!preguntas_xls.exists()) {
+			System.out.println("\nNo existe el fichero " + fichero_xls + ".\nDebe crearlo en " + "la ruta: " + ruta);
+		} else {
+			try {
+				BufferedWriter bw = new BufferedWriter(new FileWriter(fichero_preguntas, true));
+				Workbook w = Workbook.getWorkbook(preguntas_xls);
+				Sheet sheet = w.getSheet(0);
 
+				for (int i = 0; i < sheet.getRows(); i++) {
+					String content = "";
+					for (int j = 0; j < sheet.getColumns(); j++) {
+						content += sheet.getCell(j, i).getContents() + "#";
+					}
+					// System.out.println(content);
+					bw.write(content);
+					bw.newLine();
+				}
+				w.close();
+				bw.close();
+			} catch (BiffException e) {
+				System.err.println("\nERROR AL LEER EL FICHERO " + fichero_xls);
+				e.printStackTrace();
+			} catch (IOException e) {
+				System.err.println("\nERROR EN EL FLUJO DE ESCRITURA DE DATOS.");
+				e.printStackTrace();
+			}
+		}
+	}
 }

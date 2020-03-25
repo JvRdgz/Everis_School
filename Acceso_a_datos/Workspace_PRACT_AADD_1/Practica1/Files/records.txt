@@ -1,4 +1,2 @@
-Javier:40
-Felipe:10
-Ignacio:25
-Fernando:25
+Felipe:40
+Javier:60

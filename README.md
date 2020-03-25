@@ -1,4 +1,4 @@
-# Everis_School
+# Everis School
 
 Higher level Technical Degree in cross-latform application development.
 

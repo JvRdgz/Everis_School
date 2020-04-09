@@ -1,2 +1,1 @@
-Felipe:40
-Javier:60
+Javier:70

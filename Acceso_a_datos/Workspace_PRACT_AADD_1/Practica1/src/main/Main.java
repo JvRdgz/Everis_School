@@ -6,7 +6,7 @@ import clases.Menu;
 public class Main {
 
 	public static void main(String[] args) {
-		Juego.crear_directorio();
+		Juego.crear_ficheros();
 		Menu.menuPrincipal();
 	}
 }

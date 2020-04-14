@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="Libraries/itextpdf-5.5.9.jar"/>
 	<classpathentry kind="lib" path="Libraries/jdom-2.0.6.jar"/>
 	<classpathentry kind="lib" path="Libraries/jxl.jar"/>
+	<classpathentry kind="lib" path="/home/jarodrig/Escritorio/Everis_School/Acceso_a_datos/Workspace_PRACT_AADD_1/Practica1/Libraries/mysql-connector-java-5.1.48.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -147,6 +147,7 @@ public class Pregunta {
 	}
 
 	public static void importar_preguntas() {
+
 		File preguntas_txt = new File(Menu.getFichero_preguntas());
 		File preguntas_xls = new File(Menu.getFichero_xls());
 		if (!preguntas_txt.exists()) {
@@ -158,7 +159,8 @@ public class Pregunta {
 			}
 		}
 		if (!preguntas_xls.exists()) {
-			System.out.println("\nNo existe el fichero " + Menu.getFichero_xls() + ".\nDebe crearlo en " + "la ruta: " + Menu.getRuta());
+			System.out.println("\nNo existe el fichero " + Menu.getFichero_xls() + ".\nDebe crearlo en " + "la ruta: "
+					+ Menu.getRuta());
 		} else {
 			try {
 				BufferedWriter bw = new BufferedWriter(new FileWriter(Menu.getFichero_preguntas(), true));

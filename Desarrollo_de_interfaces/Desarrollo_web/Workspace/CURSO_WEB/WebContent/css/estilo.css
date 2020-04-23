@@ -1,0 +1,65 @@
+html {
+    display: table;
+    margin: auto;
+    background: #E6E6E6 none;
+}
+body {
+	width: 100%;
+    display: block;
+    margin: 0 auto;
+    /*margin: 8px;*/
+	/*width: 80.834em;*/
+	color: #444;
+	font: normal 1em/1.3em Verdana,Arial,Helvetica,sans-serif;
+	padding: 0;
+	height: 1%;
+	background: transparent;
+    background: #FFF none;
+    /*display: table-cell;*/
+    vertical-align: middle;
+    font-family: Calibri, Arial;
+}
+body, input, select, textarea {
+    font-family: Calibri, Arial;
+}
+.ui-datepicker .ui-widget-content {        
+	background: #111 none;  
+}
+section#index {
+	/*float: right;*/
+	/*padding: 20px;*/
+	margin: 10px;
+}
+section#content {
+    /*padding: 20px;*/
+    /*float: left;*/
+    margin: 40px;
+}
+section#tabla {
+    /*padding: 20px;*/
+    float: right;
+    margin: 40px;
+}
+footer {
+	padding-top: 100px;
+}
+/*
+#header {
+	width: 100%;
+	height: 164px;
+	float: left;
+	position: relative;
+	z-index: 1;
+}
+*/
+table#listados {
+	border-collapse: collapse;
+	width:550px;
+}
+th {
+	height: 20px;
+	background-color: #ffee55;
+}
+td#opciones {
+    width: 200px;
+}

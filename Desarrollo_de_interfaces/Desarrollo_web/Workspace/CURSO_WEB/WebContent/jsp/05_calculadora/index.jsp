@@ -14,6 +14,10 @@ if(operando1==null) {
 	operando1 = "";
 }
 
+String operando2 = (String)request.getAttribute("operando2");
+if(operando2==null) {
+	operando2 = "";
+}
 String mensaje = (String) request.getAttribute("result");
 if(mensaje==null) {
 	mensaje="";
@@ -34,7 +38,7 @@ if(mensaje==null) {
 		<option value="4">/</option>
 	</select>
 	
-	Operando 2: <input name="operando2" type="text">
+	Operando 2: <input name="operando2" type="text" value="<%= operando2 %>">
 	
 	<input name="calcular" value="Calcular" type="submit">
 	<input name="limpiar" value="Limpiar" type="reset">

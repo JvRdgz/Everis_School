@@ -45,7 +45,7 @@ public class Lista extends HttpServlet {
 		request.setAttribute("alumnos", listado);
 		request.setAttribute("nombre", "pepe");
 		
-		getServletContext().getRequestDispatcher("/jsp/04_atributos/lista.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/jsp/04_atributos/lista2.jsp").forward(request, response);
 		//request.getRequestDispatcher("/jsp/04_atributos/lista.jsp").forward(request, response);
 	}
 	

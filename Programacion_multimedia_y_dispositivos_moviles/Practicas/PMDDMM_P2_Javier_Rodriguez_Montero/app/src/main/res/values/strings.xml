@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PMDDMM_P2_Javier_Rodriguez_Montero</string>
+    <string name="edit_Text_1">Introducir primer valor</string>
+    <string name="edit_Text_2">Introducir segundo valor</string>
+    <string name="button_1">Calcular</string>
+    <string name="txt_View_1">Resultado</string>
+</resources>

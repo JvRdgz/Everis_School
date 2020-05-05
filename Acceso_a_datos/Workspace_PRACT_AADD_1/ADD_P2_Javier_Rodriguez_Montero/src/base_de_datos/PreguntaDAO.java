@@ -17,6 +17,7 @@ public class PreguntaDAO {
 	// ENTIENDO POR QUE.
 	// SI NO FUNCIONA, PROBAR A HACERLO DE ESA FORMA.
 	private static Connection conexion;
+	// private static Statement st;
 
 	public static Connection getConexion() {
 		return conexion;
@@ -26,22 +27,49 @@ public class PreguntaDAO {
 		PreguntaDAO.conexion = conexion;
 	}
 
-	public static int insertarPregunta(Pregunta pregunta) {
+	public static void insertarPregunta(Pregunta pregunta) {
+		int res_stmt = 0;
+		// EL PreparedStatement ME ESTA DANDO PROBLEMAS, NO INSERTA EN LA BASE DE DATOS.
+		// ME DABA PROBLEMAS POR NO PONER EL MALDITO conexion.commit();!!!!!!!!!
+		// LLEVO MAS DE 5 HORAS PERDIDAS POR ESE P***** FALLO.
+
+		PreparedStatement stmt;
 		try {
-			PreparedStatement stmt = conexion.prepareStatement(
-					"INSERT INTO preguntas (,pregunta respuesta1, respuesta2, respuesta3, respuesta_correcta)\n"
-							+ "VALUES(?,?,?,?,?);");
+			stmt = conexion.prepareStatement(
+					"INSERT INTO preguntas (pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta) VALUES(?,?,?,?,?);");
 			stmt.setString(1, pregunta.getPregunta());
 			stmt.setString(2, pregunta.getRespuesta1());
 			stmt.setString(3, pregunta.getRespuesta2());
 			stmt.setString(4, pregunta.getRespuesta3());
 			stmt.setString(5, pregunta.getRespuesta_correcta());
-			return stmt.executeUpdate();
+			System.out.println(stmt.toString());
+			res_stmt = stmt.executeUpdate();
+			if (res_stmt == 1)
+				System.out.println("Pregunta insertada correctamente.");
+			else
+				System.err.println("\n\tERROR AL INSERTAR EN LA BASE DE DATOS.");
+			conexion.commit(); // ME CAGO EN EL COMMIT!!!
+			stmt.close();
 		} catch (SQLException e) {
-			System.err.println("\n\tERROR AL INGRESAR DATOS EN LA TABLA.");
+			System.err.println("\n\tERROR EN LA CONEXION CON LA BASE DE DATOS.");
 			e.printStackTrace();
-			return -1;
 		}
+
+		// OPCION NUMERO 2, FUNCIONA TAMBIEN PERFECTAMENTE.
+		/*
+		 * String query =
+		 * ("INSERT INTO preguntas (pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta) VALUES('"
+		 * + pregunta.getPregunta() + "','" + pregunta.getRespuesta1() + "','" +
+		 * pregunta.getRespuesta2() + "','" + pregunta.getRespuesta3() + "','" +
+		 * pregunta.getRespuesta_correcta() + "');"); System.out.println(query); try {
+		 * st = conexion.createStatement(); res_stmt = st.executeUpdate(query); if
+		 * (res_stmt == 1) { System.out.println("Pregunta insertada correctamente."); }
+		 * else System.out.println("\n\tERROR AL INSERTAR EN LA BASE DE DATOS.");
+		 * conexion.commit(); } catch (SQLException e) {
+		 * System.err.println("\n\tERROR EN LA CONEXION CON LA BASE DE DATOS.");
+		 * e.printStackTrace(); }
+		 */
+
 	}
 
 	public static ArrayList<Pregunta> consultarPreguntas() {

@@ -141,8 +141,7 @@ public class Pregunta {
 				e.printStackTrace();
 			}
 		} else {
-			Connection c = ConexionDAO.getConexion();
-			PreguntaDAO.setConexion(c);
+			PreguntaDAO.setConexion(ConexionDAO.getConexion());
 			PreguntaDAO.insertarPregunta(p);
 		}
 	}

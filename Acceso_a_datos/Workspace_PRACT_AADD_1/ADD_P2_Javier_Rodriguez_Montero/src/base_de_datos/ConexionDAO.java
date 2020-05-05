@@ -9,7 +9,7 @@ import properties.Config;
 
 public class ConexionDAO {
 
-	static Connection conexion;
+	public static Connection conexion;
 //	static String bd = "company";
 //	static String user = "root";
 //	static String password = "password";
@@ -25,6 +25,10 @@ public class ConexionDAO {
 	// static String url = "jdbc:mysql://localhost:3306/" + bd + "?user=" + user +
 	// "&password=" + password + "&useUnicode=true&characterEncoding=UTF-8";
 
+	public ConexionDAO() {
+		conexion = getConexion();
+	}
+	
 	// DEVUELVE true SI SE HA CREADO CORRECTAMENTE
 	public static boolean crearConexion() {
 		try {
@@ -51,15 +55,17 @@ public class ConexionDAO {
 			System.err.println(e);
 			return false;
 		}
+		System.out.println("\n\tCONEXION CON BASE DE DATOS REALIZADA.");
 		return true;
 	}
 
 	// PATRON SINGLETON
 	public static Connection getConexion() {
-		if (conexion == null)
-			crearConexion();
-		return conexion;
-	}
+	    if (conexion == null) {
+	    	crearConexion();
+	    }
+	    return conexion;
+    }
 
 	public static void desconectar() {
 		try {
@@ -72,9 +78,33 @@ public class ConexionDAO {
 		}
 	}
 
+	public static String getBd() {
+		return bd;
+	}
+
+	public static String getUser() {
+		return user;
+	}
+
+	public static String getPassword() {
+		return password;
+	}
+
+	public static String getHost() {
+		return host;
+	}
+
+	public static String getUrl() {
+		return url;
+	}
+	
+	
+
 	/*
 	 * public static void main(String[] args) { Connection c =
-	 * ConexionDAO.getConexion(); System.out.println(c); }
+	 * ConexionDAO.getConexion(); System.out.println(c); System.out.println(bd);
+	 * System.out.println(user); System.out.println(password);
+	 * System.out.println(host); System.out.println(url); }
 	 */
 
 }

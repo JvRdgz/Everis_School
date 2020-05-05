@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexion {
-	static String bd = "company";
+	static String bd = "dam";
 	static String login = "root";
 	static String password = "password";
 	static String host = "127.0.0.1"; //localhost

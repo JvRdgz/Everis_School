@@ -22,9 +22,10 @@ public class OperacionesBD {
 			st = conexion.createStatement();
 
 			if (conexion != null) {
+				crearBaseDeDatos();
 				//borrarTabla();
-				//crearTabla();
-				//insertar();
+				crearTabla();
+				insertar();
 				//crearTabla();
 				//consultar();
 				//insertar();
@@ -96,7 +97,7 @@ public class OperacionesBD {
 		
 		System.out.println("Insertar registro:");
 		PreparedStatement ps = conexion
-				.prepareStatement("INSERT INTO alumno (nombre, apellidos, correo) " + "VALUES (?, ?, ?)");
+				.prepareStatement("INSERT INTO alumno (nombre, apellidos, telefono) " + "VALUES (?, ?, ?)");
 
 		ps.setString(1, nombre);
 		ps.setString(2, apellidos);

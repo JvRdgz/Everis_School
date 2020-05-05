@@ -3,6 +3,7 @@ package clases;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import base_de_datos.ConexionDAO;
 import properties.Persistencia;
 
 public class Menu {
@@ -17,6 +18,11 @@ public class Menu {
 		ArrayList<Pregunta> preguntas = new ArrayList<Pregunta>();
 		if (Persistencia.getMethod().equalsIgnoreCase("file"))
 			Juego.crear_ruta_ficheros();
+		System.out.println(ConexionDAO.getBd());
+		System.out.println(ConexionDAO.getUser());
+		System.out.println(ConexionDAO.getPassword());
+		System.out.println(ConexionDAO.getHost());
+		System.out.println(ConexionDAO.getUrl());
 		System.out.println("\n\t\tMENU PRINCIPAL PRACTICA 2 AADD\n\n");
 
 		do {

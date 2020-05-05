@@ -22,6 +22,8 @@ public class ConexionDAO {
 	static String password = Config.getParametro(Files.getBbddd_properties(), "bd.password");
 	static String host = Config.getParametro(Files.getBbddd_properties(), "bd.host");
 	static String url = String.format("jdbc:mysql://%s/%s?useSSL=false", host, bd); // NO ES NECESARIO INCLUIR EL PUERTO
+	// static String url = "jdbc:mysql://localhost:3306/" + bd + "?user=" + user +
+	// "&password=" + password + "&useUnicode=true&characterEncoding=UTF-8";
 
 	// DEVUELVE true SI SE HA CREADO CORRECTAMENTE
 	public static boolean crearConexion() {
@@ -40,7 +42,7 @@ public class ConexionDAO {
 			// CAMBIOS,
 			// SIEMPRE Y CUANDO LO DEJEMOS ASI, SINO, HACIENDO UN setAutoCommit(true) LO
 			// HACE
-			// AUTOMATICAMENTE AUNQUE REPITO, NO ES RECOMENDABLE.
+			// AUTOMATICAMENTE PERO NO ES RECOMENDABLE.
 			conexion.setAutoCommit(false);
 		} catch (ClassNotFoundException e) {
 			System.err.println(e);
@@ -52,11 +54,10 @@ public class ConexionDAO {
 		return true;
 	}
 
-	// TECNICA SINGLETON
+	// PATRON SINGLETON
 	public static Connection getConexion() {
 		if (conexion == null)
 			crearConexion();
-		System.out.println("\n\tCONEXION CON BASE DE DATOS REALIZADA.");
 		return conexion;
 	}
 
@@ -71,8 +72,9 @@ public class ConexionDAO {
 		}
 	}
 
-	public static void main(String[] args) {
-		Connection c = ConexionDAO.getConexion();
-		System.out.println(c);
-	}
+	/*
+	 * public static void main(String[] args) { Connection c =
+	 * ConexionDAO.getConexion(); System.out.println(c); }
+	 */
+
 }

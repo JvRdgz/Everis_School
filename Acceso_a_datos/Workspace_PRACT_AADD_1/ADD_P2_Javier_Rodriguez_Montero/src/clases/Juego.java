@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Juego {
-	
+
 	static Scanner sc = new Scanner(System.in);
 
 	public static void jugar(ArrayList<Pregunta> preguntas, int puntuacion) {
-		// Si el archivo no existe se crea
-		File f = new File(Files.getRuta_files() + "Preguntas.txt");
+		// SI EL ARCHIVO NO EXISTE SE CREA
+		File f = new File(Files.getFichero_preguntas());
 		int numPregunta = 0, preguntas_acertadas = 0;
 		Pregunta p;
 		if (!f.exists()) {
@@ -34,7 +34,7 @@ public class Juego {
 			try {
 				System.out.println("\n\n\tQUE EMPIECE EL JUEGO!\n\n");
 				BufferedReader br = new BufferedReader(new FileReader(f));
-				// Numero de pregunta
+				// NUMERO DE PREGUNTAS
 				String s = br.readLine();
 				while (s != null) {
 					numPregunta++;
@@ -45,8 +45,8 @@ public class Juego {
 				br = new BufferedReader(new FileReader(f));
 				s = br.readLine();
 				numPregunta = 0;
-				// Leemos preguntas, separamos la frase con split por el caracter # y mostramos
-				// las posibles respuestas, sin mostrar la respuesta correcta.
+				// LEEMOS PREGUNTAS, SEPARAMOS LA FRASE CON SPLIT POR EL CARACTER # Y MOSTRAMOS
+				// LAS POSIBLES RESPUESTAS, SIN MOSTRAR LA RESPUESTA CORRECTA
 				while (s != null) {
 					String[] s_parts = s.split("#");
 					preguntas.add(p = new Pregunta(s_parts[0], s_parts[1], s_parts[2], s_parts[3], s_parts[4]));
@@ -57,8 +57,8 @@ public class Juego {
 					}
 					System.out.println("\nIntroduce tu respuesta:");
 					String res = sc.nextLine();
-					// Si la respuesta introducida coincide con la respuesta correcta, suma
-					// puntuacion, en caso contrario, resta.
+					// SI LA RESPUESTA INTRODUCIDA COINCIDE CON LA RESPUESTA CORRECTA, SUMA
+					// PUNTUACION, EN CASO CONTRARIO, RESTA.
 					if (res.equalsIgnoreCase(p.getRespuesta_correcta())) {
 						preguntas_acertadas++;
 						puntuacion += 10;
@@ -72,7 +72,7 @@ public class Juego {
 					s = br.readLine();
 				}
 				br.close();
-				// Si el archivo no existe, se crea.
+				// SI EL ARCHIVO NO EXISTE, SE CREA
 				File f_records = new File(Files.getRuta_files() + "records.txt");
 				if (!f_records.exists()) {
 					try {
@@ -82,12 +82,11 @@ public class Juego {
 						e.printStackTrace();
 					}
 				}
-				// Comprueba que el usuario esta guardado en el fichero de records. Si lo esta
-				// y ademas, su puntuacion guardada en el fichero es menor que la puntuacion
-				// actual,
-				// se actualiza la puntuacion del fichero.
-				// Si el usuario que ha jugado no esta guardado en el fichero, se inserta con la
-				// puntuacion obtenida.
+				// COMPRUEBA QUE EL USUARIO ESTA GUARDADO EN EL FICHERO DE RECORDS. SI LO ESTA
+				// Y ADEMAS, SU PUNTUACION GUARDADA EN EL FICHERO ES MENOR QUE LA PUNTUACION
+				// ACTUAL, SE ACTUALIZA LA PUNTUACION DEL FICHERO.
+				// SI EL USUARIO QUE HA JUGADO NO ESTA GUARDADO EN EL FICHERO, SE INSERTA CON LA
+				// PUNTUACION OBTENIDA.
 				System.out.println("\nIntroduce tu nombre:");
 				String nombre = sc.nextLine();
 
@@ -132,23 +131,29 @@ public class Juego {
 		}
 
 	}
-	
-	public static void crear_ficheros() {
+
+	public static void crear_ruta_ficheros() {
 		if (!Files.getDirectorio().exists())
 			Files.getDirectorio().mkdir();
 	}
-	
+
 	public static void instrucciones() {
-		System.out.println("\n\n\t\tINSTRUCCIONES DEL JUEGO\n\n");
-		System.out.println("\n\t- El usuario tendra que contestar a una serie de preguntas que le\n");
-		System.out.println("\t\t iran apareciendo en pantalla.");
-		System.out.println("\t- Cada pregunta, contiene tres posibles respuestas, pero solo una de ellas\n");
-		System.out.println("\t\t es la respuesta correcta. El usuario debe escribir la respuesta que\n");
-		System.out.println("\t\t crea correcta.\n");
-		System.out.println("\t- Si la respuesta es correcta, aparecera un mensaje indicando que la\n");
-		System.out.println("\t\t respuesta es correcta. En caso contrario, aparecera un mensaje indicando\n");
-		System.out.println("\t\t que la respuesta dada es incorrecta.\n\n");
-		System.out.println("\t- Por cada pregunta que el jugador acierte, ganara 10 puntos. En cambio,\n");
-		System.out.println("\t\t por cada pregunta mal contestada, el jugador perdera 5 puntos.\n\n");
+
+		File f = new File(Files.getFichero_instrucciones());
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(f));
+			String s = br.readLine();
+			while (s != null) {
+				System.out.println(s);
+				s = br.readLine();
+			}
+			br.close();
+		} catch (FileNotFoundException e) {
+			System.err.println("\nERROR AL ABRIR EL ARCHIVO.");
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.err.println("\nERROR EN LA LECTURA DE DATOS.");
+			e.printStackTrace();
+		}
 	}
 }

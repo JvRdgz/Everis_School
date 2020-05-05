@@ -1,0 +1,11 @@
+INSTRUCCIONES DEL JUEGO:
+	- El usuario tendra que contestar a una serie de preguntas que le
+		iran apareciendo en pantalla.
+	- Cada pregunta, contiene tres posibles respuestas, pero solo una de ellas
+		es la respuesta correcta. El usuario debe escribir la respuesta que
+		crea correcta.
+	- Si la respuesta es correcta, aparecera un mensaje indicando que la
+		respuesta es correcta. En caso contrario, aparecera un mensaje indicando
+		que la respuesta dada es incorrecta.
+	- Por cada pregunta que el jugador acierte, ganara 10 puntos. En cambio,
+		por cada pregunta mal contestada, el jugador perdera 5 puntos.

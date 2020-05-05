@@ -3,6 +3,8 @@ package clases;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import properties.Persistencia;
+
 public class Menu {
 
 	static Scanner sc = new Scanner(System.in);
@@ -13,7 +15,8 @@ public class Menu {
 		Pregunta p = new Pregunta();
 		String pregunta = "", respuesta1 = "", respuesta2 = "", respuesta3 = "", respuesta_correcta = "";
 		ArrayList<Pregunta> preguntas = new ArrayList<Pregunta>();
-
+		if (Persistencia.getMethod().equalsIgnoreCase("file"))
+			Juego.crear_ruta_ficheros();
 		System.out.println("\n\t\tMENU PRINCIPAL PRACTICA 2 AADD\n\n");
 
 		do {
@@ -40,14 +43,12 @@ public class Menu {
 				Pregunta.aniadir_preguntas(p, pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta);
 				break;
 			case 3:
-				// System.out.println("\n\tNO DISPONIBLE ACTUALMENTE.\n");
-				Pregunta.exportar_preguntas(Files.getFichero_xml(), Files.getFichero_preguntas());
+				Pregunta.exportar_preguntas();
 				break;
 			case 4:
 				Juego.instrucciones();
 				break;
 			case 5:
-				// System.out.println("\n\tNO DISPONIBLE ACTUALMENTE.\n");
 				Pregunta.importar_preguntas();
 				break;
 			case 6:

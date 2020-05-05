@@ -10,8 +10,8 @@
 	<classpathentry kind="lib" path="Libraries/itextpdf-5.5.9.jar"/>
 	<classpathentry kind="lib" path="Libraries/jdom-2.0.6.jar"/>
 	<classpathentry kind="lib" path="Libraries/jxl.jar"/>
-	<classpathentry kind="lib" path="Libraries/mysql-connector-java-5.1.48.jar"/>
 	<classpathentry kind="lib" path="Libraries/log4j-api-2.13.1.jar"/>
 	<classpathentry kind="lib" path="Libraries/log4j-core-2.13.1.jar"/>
+	<classpathentry kind="lib" path="Libraries/mysql-connector-java-5.1.49.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

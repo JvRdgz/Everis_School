@@ -30,7 +30,7 @@ public class PDFHeaderFooter extends PdfPageEventHelper {
 
 			// imagen
 			// Obtenemos la imagen
-			imagen = Image.getInstance("." + File.separator + "logo.png");
+			imagen = Image.getInstance("." + File.separator + "Images" + File.separator + "logo.png");
 			// Convertimos la imagen a un Chunck (Chunck es la parte mas peque�a que puede
 			// ser a�adida a un documento)
 			Chunk chunk = new Chunk(imagen, 0, -60);

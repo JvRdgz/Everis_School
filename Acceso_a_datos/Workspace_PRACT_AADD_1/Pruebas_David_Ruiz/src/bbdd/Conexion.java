@@ -53,8 +53,8 @@ public class Conexion {
     public static void main(String[] args) {
     	Connection c = Conexion.getConexion();
     	System.out.println(c);
-    	c = Conexion.getConexion();
-    	System.out.println(c);
+    	// c = Conexion.getConexion();
+    	// System.out.println(c);
     }
 
 }

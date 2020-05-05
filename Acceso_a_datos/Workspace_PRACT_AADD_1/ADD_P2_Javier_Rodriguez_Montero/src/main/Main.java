@@ -1,12 +1,14 @@
 package main;
 
-import clases.Juego;
 import clases.Menu;
+import properties.Persistencia;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Juego.crear_ficheros();
-		Menu.menuPrincipal();
+		if (Persistencia.comprobarFicheroPersistencia())
+			Menu.menuPrincipal();
+		else
+			System.err.println("\n\tERROR, DEBES CONFIGURAR EL ARCHIVO persistencia.properties CORRECTAMENTE.");
 	}
 }

@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import org.jdom2.Document;
@@ -14,9 +16,12 @@ import org.jdom2.Element;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
+import base_de_datos.ConexionDAO;
+import base_de_datos.PreguntaDAO;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
+import properties.Persistencia;
 
 public class Pregunta {
 
@@ -44,62 +49,72 @@ public class Pregunta {
 		this.respuesta_correcta = respuesta_correcta;
 	}
 
-	public static void escribir_XML(File f_preguntas_xml, File f_preguntas_txt) {
+	public static void escribir_XML() {
 
-		try {
-			Pregunta p;
+		if (Persistencia.is_file_method()) {
+			try {
+				Pregunta p;
 
-			BufferedReader br = new BufferedReader(new FileReader(f_preguntas_txt));
+				BufferedReader br = new BufferedReader(new FileReader(Files.getFichero_xml()));
 
-			String s = br.readLine();
-			// TENGO QUE LEER EN EL FICHERO Preguntas.txt, y crear un objeto Pregunta.
-			// Para ello, tengo que separar por cada linea del fichero, los atributos
-			// correspondientes a Pregunta.
-			// Esto es necesario porque necesito extraer los campos de la pregunta por
-			// separado para despues, mas abajo, crear las etiquetas del XML.
+				String s = br.readLine();
+				// TENGO QUE LEER EN EL FICHERO Preguntas.txt, y crear un objeto Pregunta.
+				// Para ello, tengo que separar por cada linea del fichero, los atributos
+				// correspondientes a Pregunta.
+				// Esto es necesario porque necesito extraer los campos de la pregunta por
+				// separado para despues, mas abajo, crear las etiquetas del XML.
 
-			String docNuevoStr = "";
+				String docNuevoStr = "";
 
-			Document docNuevo = new Document();
+				Document docNuevo = new Document();
 
-			Element nodoRaiz = new Element("preguntas");
-			docNuevo.addContent(nodoRaiz);
+				Element nodoRaiz = new Element("preguntas");
+				docNuevo.addContent(nodoRaiz);
 
-			while (s != null) {
-				String[] s_parts = s.split("#");
-				p = new Pregunta(s_parts[0], s_parts[1], s_parts[2], s_parts[3], s_parts[4]);
+				while (s != null) {
+					String[] s_parts = s.split("#");
+					p = new Pregunta(s_parts[0], s_parts[1], s_parts[2], s_parts[3], s_parts[4]);
 
-				Element nodoPregunta = new Element("pregunta");
+					Element nodoPregunta = new Element("pregunta");
 
-				nodoRaiz.addContent(nodoPregunta);
+					nodoRaiz.addContent(nodoPregunta);
 
-				nodoPregunta.setText(p.getPregunta());
-				Format format = Format.getPrettyFormat();
+					nodoPregunta.setText(p.getPregunta());
+					Format format = Format.getPrettyFormat();
 
-				XMLOutputter xmloutputter = new XMLOutputter(format);
+					XMLOutputter xmloutputter = new XMLOutputter(format);
 
-				docNuevoStr = xmloutputter.outputString(docNuevo);
+					docNuevoStr = xmloutputter.outputString(docNuevo);
 
-				s = br.readLine();
+					s = br.readLine();
 
+				}
+				System.out.println(docNuevoStr);
+
+				br.close();
+
+				FileWriter fichero = null;
+
+				fichero = new FileWriter(Files.getFichero_xml());
+				PrintWriter pw = new PrintWriter(fichero);
+				pw.println(docNuevoStr);
+
+				fichero.close();
+			} catch (IOException e) {
+				System.err.println("\nNO EXISTE EL FICHERO.");
+				e.printStackTrace();
 			}
-			System.out.println(docNuevoStr);
-
-			br.close();
-
-			FileWriter fichero = null;
-
-			fichero = new FileWriter(f_preguntas_xml);
-			PrintWriter pw = new PrintWriter(fichero);
-			pw.println(docNuevoStr);
-
-			fichero.close();
-		} catch (IOException e) {
-			System.err.println("\nNO EXISTE EL FICHERO.");
-			e.printStackTrace();
+		} else {
+			Connection c = ConexionDAO.getConexion();
+			PreguntaDAO.setConexion(c);
+			ArrayList<Pregunta> pregunta = PreguntaDAO.consultarPreguntas();
+			
 		}
 	}
 
+	// AÑADE UNA PREGUNTA AL FICHERO Preguntas.txt O A LA BASE DE DATOS, SEGUN SE
+	// HAYA ESPECIFICADO
+	// EN EL FICHERO persistencia.properties
 	public static void aniadir_preguntas(Pregunta p, String pregunta, String respuesta1, String respuesta2,
 			String respuesta3, String respuesta_correcta) {
 		System.out.println("\nIntroduce una pregunta:");
@@ -110,22 +125,33 @@ public class Pregunta {
 		respuesta2 = sc.nextLine();
 		System.out.println("\nIntroduce posible respuesta 3:");
 		respuesta3 = sc.nextLine();
-		System.out.println("\nInFtroduce la respuesta correcta:");
+		System.out.println("\nIntroduce la respuesta correcta:");
 		respuesta_correcta = sc.nextLine();
 		p = new Pregunta(pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta);
-		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter((Files.getRuta_files() + "Preguntas.txt"), true));
-			bw.write(p.toString());
-			bw.newLine();
-			bw.close();
-		} catch (IOException e) {
-			System.err.println("Error en la escritura de datos.");
-			e.printStackTrace();
+		if (Persistencia.is_file_method()) {
+			try {
+				// ESTO PUEDO HACERLO EN UNA CLASE DIFERENTE DONDE SE CONTROLEN LAS LECTURAS Y
+				// ESCRITURAS DE FICHEROS.
+				BufferedWriter bw = new BufferedWriter(new FileWriter((Files.getFichero_preguntas()), true));
+				bw.write(p.toString());
+				bw.newLine();
+				bw.close();
+			} catch (IOException e) {
+				System.err.println("ERROR EN LA ESCRITURA DE DATOS.");
+				e.printStackTrace();
+			}
+		} else {
+			Connection c = ConexionDAO.getConexion();
+			PreguntaDAO.setConexion(c);
+			PreguntaDAO.insertarPregunta(p);
 		}
 	}
 
-	public static void exportar_preguntas(String fichero_xml, String fichero_preguntas) {
-		File f = new File(fichero_xml);
+	// EXPORTA LAS PREGUNTAS AL FICHERO preguntas.xml O A LA BASE DE DATOS, SEGUN SE
+	// HAYA ESPECIFICADO
+	// EN EL FICHERO persistencia.properties
+	public static void exportar_preguntas() {
+		File f = new File(Files.getFichero_xml());
 		if (!f.exists()) {
 			try {
 				f.createNewFile();
@@ -134,16 +160,7 @@ public class Pregunta {
 				e1.printStackTrace();
 			}
 		}
-		File f2 = new File(fichero_preguntas);
-		if (!f.exists()) {
-			try {
-				f.createNewFile();
-			} catch (IOException e1) {
-				System.err.println("\nERROR AL CREAR EL ARCHIVO Preguntas.txt.");
-				e1.printStackTrace();
-			}
-		}
-		escribir_XML(f, f2);
+		escribir_XML();
 	}
 
 	public static void importar_preguntas() {

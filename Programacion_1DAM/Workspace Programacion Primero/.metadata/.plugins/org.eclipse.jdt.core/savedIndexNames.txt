@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/home/jarodrig/Escritorio/Everis_School/Programacion_1DAM/Workspace Programacion Primero/.metadata/.plugins/org.eclipse.jdt.core
-2941295201.index
-3629624055.index
-2714597635.index

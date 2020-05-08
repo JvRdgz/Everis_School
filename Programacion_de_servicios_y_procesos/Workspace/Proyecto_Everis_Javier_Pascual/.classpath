@@ -6,7 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/home/jarodrig/Escritorio/Everis_School/Programacion_de_servicios_y_procesos/javax.mail.jar"/>
-	<classpathentry kind="lib" path="/home/jarodrig/Escritorio/Everis_School/Programacion_de_servicios_y_procesos/activation.jar"/>
+	<classpathentry kind="lib" path="Librerias/javax.mail.jar"/>
+	<classpathentry kind="lib" path="Librerias/activation.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -16,7 +16,35 @@ public class Cliente {
 	private String codigo_postal; // DEFAULT NULL
 	private int codigo_empleado_rep_ventas; // CLASE EMPLEADO. DEFAULT NULL
 	private double limite_credito; // DEFAULT NULL
+	private static int num_id_cliente = 0;
 
+	// CONSTRUCTOR PARA REGISTRAR CLIENTE
+	public Cliente(String nombre_cliente, String nombre_contacto, String telefono, String fax, String linea_direccion1,
+			String ciudad) {
+		// SE QUE ES UNA GUARRADA, PERO AL NO SER EL codigo_cliente AUTOINCREMENT EN LA
+		// BBDD,
+		// TENGO QUE GUARDARLO DE FORMA SEMI-AUTOMATICA A PARTIR DEL VALOR DEL ULTIMO
+		// CLIENTE
+		// INSERTADO CUYO ID ES 38.
+		num_id_cliente++;
+		this.codigo_cliente = 38 + num_id_cliente;
+		this.nombre_cliente = nombre_cliente;
+		this.nombre_contacto = nombre_contacto;
+		this.apellido_contacto = null;
+		this.telefono = telefono;
+		this.fax = fax;
+		this.linea_direccion1 = linea_direccion1;
+		this.linea_direccion2 = null;
+		this.ciudad = ciudad;
+		this.region = null;
+		this.pais = null;
+		this.codigo_postal = null;
+		this.codigo_empleado_rep_ventas = 12; // ES UNA FOREIGN KEY DE EMPLEADO, POR TANTO LE PONDRE UNA VALIDA POR
+												// DEFECTO 12
+		this.limite_credito = 0; // POR DEFECTO 0
+	}
+
+	// CONSTRUCTOR PARA CONSULTAS SQL
 	public Cliente(int codigo_cliente, String nombre_cliente, String nombre_contacto, String apellido_contacto,
 			String telefono, String fax, String linea_direccion1, String linea_direccion2, String ciudad, String region,
 			String pais, String codigo_postal, int codigo_empleado_rep_ventas, double limite_credito) {
@@ -34,6 +62,117 @@ public class Cliente {
 		this.codigo_postal = codigo_postal;
 		this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
 		this.limite_credito = limite_credito;
+	}
+
+	public int getCodigo_cliente() {
+		return codigo_cliente;
+	}
+
+	public void setCodigo_cliente(int codigo_cliente) {
+		this.codigo_cliente = codigo_cliente;
+	}
+
+	public String getNombre_cliente() {
+		return nombre_cliente;
+	}
+
+	public void setNombre_cliente(String nombre_cliente) {
+		this.nombre_cliente = nombre_cliente;
+	}
+
+	public String getNombre_contacto() {
+		return nombre_contacto;
+	}
+
+	public void setNombre_contacto(String nombre_contacto) {
+		this.nombre_contacto = nombre_contacto;
+	}
+
+	public String getApellido_contacto() {
+		return apellido_contacto;
+	}
+
+	public void setApellido_contacto(String apellido_contacto) {
+		this.apellido_contacto = apellido_contacto;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public String getFax() {
+		return fax;
+	}
+
+	public void setFax(String fax) {
+		this.fax = fax;
+	}
+
+	public String getLinea_direccion1() {
+		return linea_direccion1;
+	}
+
+	public void setLinea_direccion1(String linea_direccion1) {
+		this.linea_direccion1 = linea_direccion1;
+	}
+
+	public String getLinea_direccion2() {
+		return linea_direccion2;
+	}
+
+	public void setLinea_direccion2(String linea_direccion2) {
+		this.linea_direccion2 = linea_direccion2;
+	}
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
+
+	public String getPais() {
+		return pais;
+	}
+
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
+
+	public String getCodigo_postal() {
+		return codigo_postal;
+	}
+
+	public void setCodigo_postal(String codigo_postal) {
+		this.codigo_postal = codigo_postal;
+	}
+
+	public int getCodigo_empleado_rep_ventas() {
+		return codigo_empleado_rep_ventas;
+	}
+
+	public void setCodigo_empleado_rep_ventas(int codigo_empleado_rep_ventas) {
+		this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
+	}
+
+	public double getLimite_credito() {
+		return limite_credito;
+	}
+
+	public void setLimite_credito(double limite_credito) {
 		this.limite_credito = limite_credito;
 	}
 

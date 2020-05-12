@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.item2) {
             Toast.makeText(this, getString(R.string.item2), Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "Abriendo Pagina web", Toast.LENGTH_LONG).show();
-            // startActivity(new Intent(this, WebView.class));
+            // Toast.makeText(this, "Abriendo Pagina web", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(this, WebViewActivity.class));
         }
 
         if (id == R.id.item3) {
             Toast.makeText(this, getString(R.string.item3), Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "Abriendo Mapa", Toast.LENGTH_LONG).show();
+            // Toast.makeText(this, "Abriendo Mapa", Toast.LENGTH_LONG).show();
             // startActivity(new Intent(this, Mapa.class));
         }
 

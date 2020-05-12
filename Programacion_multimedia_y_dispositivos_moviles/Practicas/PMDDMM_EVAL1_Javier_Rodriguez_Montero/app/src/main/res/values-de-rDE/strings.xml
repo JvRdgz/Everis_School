@@ -14,4 +14,5 @@
     <string name="txtvComentarios">Kommentar schreiben:</string>
     <string name="etCajaComentarios"></string>
     <string name="buttonReservar">Reservierung bestätigen</string>
+    <string name="vwButton">raus</string>
 </resources>

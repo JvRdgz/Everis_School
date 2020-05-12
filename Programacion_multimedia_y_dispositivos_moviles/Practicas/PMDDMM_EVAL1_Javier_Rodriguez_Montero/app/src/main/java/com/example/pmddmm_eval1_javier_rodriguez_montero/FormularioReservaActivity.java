@@ -21,7 +21,7 @@ public class FormularioReservaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario_reserva);
 
-        Toast.makeText(this, "Metodo OnCreate del FormularioReservaActivity", Toast.LENGTH_LONG).show();
+        // Toast.makeText(this, "Metodo OnCreate del FormularioReservaActivity", Toast.LENGTH_LONG).show();
 
         /*
         DE MOMENTO NO SON NECESARIOS

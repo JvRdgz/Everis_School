@@ -7,12 +7,17 @@ public class Calculo {
 		switch(operacion) {
 		case "1":
 			resultado = suma(op1, op2);
+			// System.out.println(resultado);
+			break;
 		case "2":
 			resultado = resta(op1, op2);
+			break;
 		case "3":
 			resultado = multiplicar(op1, op2);
+			break;
 		case "4":
 			resultado = divir(op1, op2);
+			break;
 		}
 		return (resultado);
 	}

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="clases.Calculo" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,6 +9,7 @@
 	</head>
 	<body>
 		<%
+		/*
 		String operando1 = (String)request.getAttribute("operando1");
 		if(operando1==null) {
 			operando1 = "";
@@ -20,13 +22,11 @@
 		if(operando2==null) {
 			operando2 = "";
 		}
-		String result = (String) request.getAttribute("result");
-		if(result==null) {
-			result="";
-		}
+		*/
+		String result = (String) request.getAttribute("resultado");
 		%>
-		<form action="<%=request.getContextPath()%>/calcular" method="get">
-			Operando1:<input name="operando1" type="text" value="<%= operando1 %>">
+		<form action="<%=request.getContextPath()%>/calculadora" method="post">
+			<input name="operando1" type="number" placeholder="Introduce primer operando">
 			<select name="operacion">
 			<!-- <option value="${item.key}" ${item.key == selectedDept ? 'selected="selected"' : ''}>${item.value}</option> -->
 				<option value="1" selected>+</option>
@@ -34,11 +34,11 @@
 				<option value="3">*</option>
 				<option value="4">/</option>
 			</select>
-			Operando2:<input name="operando2" type="text" value="<%= operando2 %>">
+			<input name="operando2" type="number" placeholder="Introduce segundo operando">
 			<input name="Calcular" value="Calcular" type="submit">
 			<input name="limpiar" value="Limpiar" type="reset">
 		</form>
 			<br>
-			Result:<input name="Resultado" type="text" value="<%= result %>">
+			<input disabled="disabled" name="resultado" type="number" value="<%= result %>">
 	</body>
 </html>

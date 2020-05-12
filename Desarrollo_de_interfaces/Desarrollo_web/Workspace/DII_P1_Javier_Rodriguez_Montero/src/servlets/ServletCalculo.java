@@ -39,21 +39,22 @@ public class ServletCalculo extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		Double operando1 = Double.parseDouble(request.getParameter("operando1"));
-		String operacion = request.getParameter("operacion");
-		Double operando2 = Double.parseDouble(request.getParameter("operando2"));
-		Double resultado = Calculo.result(operacion, operando1, operando2);
+		Double op1 = Double.parseDouble(request.getParameter("operando1"));
+		String op = request.getParameter("operacion");
+		Double op2 = Double.parseDouble(request.getParameter("operando2"));
+		Double result = Calculo.result(op, op1, op2);
 		String rutaJsp = File.separator + "jsp" + File.separator + "jspCalculadora" + File.separator + "index.jsp";
 		
-		System.out.println(operando1);
-		System.out.println(operando2);
-		System.out.println(operacion);
-		System.out.println(resultado);
+		System.out.println(op1);
+		System.out.println(op2);
+		System.out.println(op);
+		System.out.println(result);
 		
-		request.setAttribute("operando1", request.getParameter("operando1"));
-		request.setAttribute("operacion", request.getParameter("operando"));
-		request.setAttribute("operando2", request.getParameter("operando2"));
-		request.setAttribute("resultado", resultado.toString());
+		/*
+		 * request.setAttribute("operando1", op1); request.setAttribute("operacion",
+		 * op); request.setAttribute("operando2", op2);
+		 */
+		request.setAttribute("resultado", result.toString());
 		request.getRequestDispatcher(rutaJsp).forward(request, response);
 
 		// doGet(request, response);

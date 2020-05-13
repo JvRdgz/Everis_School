@@ -14,7 +14,7 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        Toast.makeText(this, "Metodo OnCreate del SplashActivity", Toast.LENGTH_LONG).show();
+        // Toast.makeText(this, "Metodo OnCreate del SplashActivity", Toast.LENGTH_LONG).show();
 
         new Handler().postDelayed(new Runnable() {
             @Override

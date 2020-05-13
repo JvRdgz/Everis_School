@@ -16,7 +16,7 @@
         <activity android:name=".MainActivityDiaNoche" />
         <activity android:name=".MainActivityConversor" />
         <activity android:name=".MainActivityWebView" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

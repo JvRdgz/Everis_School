@@ -4,6 +4,7 @@
     <string name="item2">Dia y noche</string>
     <string name="item3">Conversor</string>
     <string name="item4">WebView</string>
+    <string name="item5">Map</string>
 
     <string name="textView">Calculadora Numeros Primos</string>
     <string name="editText2">Introduce qué número primo quieres calcular. Por ejemplo, si deseas saber el sexto número primo pon el número 6 en la caja de texto y dale a calcular. Te dirá que el sexto número primo es el 13.</string>

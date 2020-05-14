@@ -45,10 +45,10 @@ public class ServletCalculo extends HttpServlet {
 		Double result = Calculo.result(op, op1, op2);
 		String rutaJsp = File.separator + "jsp" + File.separator + "jspCalculadora" + File.separator + "index.jsp";
 		
-		System.out.println(op1);
-		System.out.println(op2);
-		System.out.println(op);
-		System.out.println(result);
+		/*
+		 * System.out.println(op1); System.out.println(op2); System.out.println(op);
+		 * System.out.println(result);
+		 */
 		
 		/*
 		 * request.setAttribute("operando1", op1); request.setAttribute("operacion",

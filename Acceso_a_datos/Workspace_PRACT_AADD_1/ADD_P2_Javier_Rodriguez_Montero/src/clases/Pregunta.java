@@ -7,7 +7,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -32,6 +31,13 @@ public class Pregunta {
 	private String respuesta3;
 	private String respuesta_correcta;
 
+	public Pregunta(String pregunta, String respuesta1, String respuesta2, String respuesta3) {
+		this.pregunta = pregunta;
+		this.respuesta1 = respuesta1;
+		this.respuesta2 = respuesta2;
+		this.respuesta3 = respuesta3;
+	}
+
 	public Pregunta() {
 		this.pregunta = "";
 		this.respuesta1 = "";
@@ -55,7 +61,7 @@ public class Pregunta {
 			try {
 				Pregunta p;
 
-				BufferedReader br = new BufferedReader(new FileReader(Files.getFichero_xml()));
+				BufferedReader br = new BufferedReader(new FileReader(Files.getFichero_preguntas()));
 
 				String s = br.readLine();
 				// TENGO QUE LEER EN EL FICHERO Preguntas.txt, y crear un objeto Pregunta.
@@ -105,10 +111,48 @@ public class Pregunta {
 				e.printStackTrace();
 			}
 		} else {
-			Connection c = ConexionDAO.getConexion();
-			PreguntaDAO.setConexion(c);
-			ArrayList<Pregunta> pregunta = PreguntaDAO.consultarPreguntas();
-			
+			PreguntaDAO.setConexion(ConexionDAO.getConexion());
+			ArrayList<Pregunta> preguntas = PreguntaDAO.consultarPreguntas();
+			Pregunta p;
+			try {
+
+				String docNuevoStr = "";
+
+				Document docNuevo = new Document();
+
+				Element nodoRaiz = new Element("preguntas");
+				docNuevo.addContent(nodoRaiz);
+				int i = 0;
+				while (i < preguntas.size()) {
+					// String[] s_parts = s.split("#");
+					p = preguntas.get(i);
+					// p = new Pregunta(s_parts[0], s_parts[1], s_parts[2], s_parts[3], s_parts[4]);
+
+					Element nodoPregunta = new Element("pregunta");
+
+					nodoRaiz.addContent(nodoPregunta);
+
+					nodoPregunta.setText(p.getPregunta());
+					Format format = Format.getPrettyFormat();
+
+					XMLOutputter xmloutputter = new XMLOutputter(format);
+
+					docNuevoStr = xmloutputter.outputString(docNuevo);
+					i++;
+
+				}
+				System.out.println(docNuevoStr);
+				FileWriter fichero = null;
+
+				fichero = new FileWriter(Files.getFichero_xml());
+				PrintWriter pw = new PrintWriter(fichero);
+				pw.println(docNuevoStr);
+
+				fichero.close();
+			} catch (IOException e) {
+				System.err.println("\nNO EXISTE EL FICHERO.");
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -247,5 +291,11 @@ public class Pregunta {
 	public String toString() {
 		return (this.pregunta + "#" + this.respuesta1 + "#" + this.respuesta2 + "#" + this.respuesta3 + "#"
 				+ this.respuesta_correcta);
+	}
+	public String toStringPersonalizadoSinRespuesta() {
+		return (this.pregunta + ": " + this.respuesta1 + " " + this.respuesta2 + " " + this.respuesta3);
+	}
+	public String toStringPersonalizadoSinAlmohadillas() {
+		return (this.pregunta + ": " + this.respuesta1 + " " + this.respuesta2 + " " + this.respuesta3);
 	}
 }

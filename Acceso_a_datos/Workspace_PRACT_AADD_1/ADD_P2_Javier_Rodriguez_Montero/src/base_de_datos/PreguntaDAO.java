@@ -32,11 +32,11 @@ public class PreguntaDAO {
 		// EL PreparedStatement ME ESTA DANDO PROBLEMAS, NO INSERTA EN LA BASE DE DATOS.
 		// ME DABA PROBLEMAS POR NO PONER EL MALDITO conexion.commit();!!!!!!!!!
 		// LLEVO MAS DE 5 HORAS PERDIDAS POR ESE P***** FALLO.
+		String query = "INSERT INTO preguntas (pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta) VALUES(?,?,?,?,?);";
 
 		PreparedStatement stmt;
 		try {
-			stmt = conexion.prepareStatement(
-					"INSERT INTO preguntas (pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta) VALUES(?,?,?,?,?);");
+			stmt = conexion.prepareStatement(query);
 			stmt.setString(1, pregunta.getPregunta());
 			stmt.setString(2, pregunta.getRespuesta1());
 			stmt.setString(3, pregunta.getRespuesta2());
@@ -87,6 +87,7 @@ public class PreguntaDAO {
 				Pregunta p = new Pregunta(pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta);
 				arr_preguntas.add(p);
 			}
+			conexion.commit();
 			return arr_preguntas;
 		} catch (SQLException e) {
 			System.err.println("\n\tERROR AL LEER DATOS EN LA TABLA.");

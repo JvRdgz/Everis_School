@@ -1,6 +1,4 @@
-INDEX VERSION 1.131+C:\Users\javie\Desktop\Everis_School\Programacion_1DAM\Workspace_PRACT_Prog1\.metadata\.plugins\org.eclipse.jdt.core
-3521628878.index
-1176492791.index
-2799762008.index
-599943634.index
-1072278498.index
+INDEX VERSION 1.131+/home/jarodrig/Escritorio/Everis_School/Programacion_1DAM/Workspace_PRACT_Prog1/.metadata/.plugins/org.eclipse.jdt.core
+3490794601.index
+3518261605.index
+62495947.index

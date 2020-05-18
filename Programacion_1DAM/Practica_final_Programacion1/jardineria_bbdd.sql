@@ -1,3 +1,4 @@
+/*
 DROP DATABASE IF EXISTS jardineria;
 CREATE DATABASE jardineria CHARACTER SET utf8mb4;
 USE jardineria;
@@ -927,3 +928,5 @@ INSERT INTO pago VALUES (28,'PayPal','ak-std-000022','2009-01-13',8489);
 INSERT INTO pago VALUES (30,'PayPal','ak-std-000024','2009-01-16',7863);
 INSERT INTO pago VALUES (35,'PayPal','ak-std-000025','2007-10-06',3321);
 INSERT INTO pago VALUES (38,'PayPal','ak-std-000026','2006-05-26',1171);
+*/
+SELECT * FROM cliente;

@@ -10,6 +10,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import base_de_datos.ConexionDAO;
 import base_de_datos.PreguntaDAO;
 import properties.Persistencia;
@@ -17,6 +20,7 @@ import properties.Persistencia;
 public class Juego {
 
 	static Scanner sc = new Scanner(System.in);
+	private static Logger log = Logger.getLogger(Juego.class);
 
 	public static void jugar(ArrayList<Pregunta> preguntas, int puntuacion) {
 		// SI EL ARCHIVO NO EXISTE SE CREA
@@ -136,11 +140,14 @@ public class Juego {
 				}
 			}
 		} else {
+			PropertyConfigurator.configure("./Properties/log4j.properties");
 			numPregunta = 0;
 			PreguntaDAO.setConexion(ConexionDAO.getConexion());
+			log.debug("ESTABLECIENDO CONEXION PreguntaDAO");
 			ArrayList<Pregunta> preguntasDAO = PreguntaDAO.consultarPreguntas();
+			log.info("El ArrayList contiene las preguntas leidas de la base de datos.");
 			System.out.println("\n\n\tQUE EMPIECE EL JUEGO!\n\n");
-			// NUMERO DE PREGUNTAS
+			log.info("Hayamos el numero de preguntas.");
 			for (int i = 0; i < preguntasDAO.size(); i++) {
 				numPregunta++;
 			}
@@ -148,26 +155,22 @@ public class Juego {
 			numPregunta = 0;
 
 			int i = 0;
+			log.debug("JUSTO AHORA ENTRA EN EL WHILE, DONDE COMIENZA REALMENTE EL JUEGO.");
+
 			while (i < preguntasDAO.size()) {
 				preguntas.add(preguntasDAO.get(i));
 				numPregunta++;
 				System.out.println("\nPregunta " + numPregunta + ":\n");
+				log.info("Objeto pregunta p, para guardar las preguntas");
 				Pregunta p = new Pregunta(preguntasDAO.get(i).getPregunta(), preguntasDAO.get(i).getRespuesta1(),
-						preguntasDAO.get(i).getRespuesta2(), preguntasDAO.get(i).getRespuesta3());
-				Pregunta pEntera = new Pregunta(preguntasDAO.get(i).getPregunta(), preguntasDAO.get(i).getRespuesta1(),
 						preguntasDAO.get(i).getRespuesta2(), preguntasDAO.get(i).getRespuesta3(),
 						preguntasDAO.get(i).getRespuesta_correcta());
-				System.out.println("\t" + p.toStringPersonalizadoSinRespuesta()); // MOSTRAR LA PREGUNTA ENTERA MENOS LA
-																					// RESPUESTA!!!
+				log.info("Mostramos la pregunta sin la respuesta.");
+				System.out.println("\t" + p.toStringPersonalizadoSinRespuesta());
 				System.out.println("\nIntroduce tu respuesta:");
-
-				// TENGO QUE EXTRAER LA JODIDA RESPUESTA CORRECTA DE LA PREGUNTA PARA PODER
-				// HACER LA JUGABILIDAD
-
 				String res = sc.nextLine();
-				// SI LA RESPUESTA INTRODUCIDA COINCIDE CON LA RESPUESTA CORRECTA, SUMA
-				// PUNTUACION, EN CASO CONTRARIO, RESTA.
-				if (res.equalsIgnoreCase(pEntera.getRespuesta_correcta())) {
+
+				if (res.equalsIgnoreCase(p.getRespuesta_correcta())) {
 					preguntas_acertadas++;
 					puntuacion += 10;
 					System.out.println(
@@ -177,8 +180,10 @@ public class Juego {
 					System.out.println("\nOOOOHH RESPUESTA INCORRECTA...\nTienes una puntuacion total de " + puntuacion
 							+ " puntos.\n");
 				}
+				i++;
+				log.debug("VUELTA DEL BUCLE WHILE COMPLETADA.");
 			}
-			// SI EL ARCHIVO NO EXISTE, SE CREA
+			log.debug("SALIMOS DEL BUCLE WHILE.");
 			File f_records = new File(Files.getRuta_files() + "records.txt");
 			if (!f_records.exists()) {
 				try {
@@ -188,11 +193,8 @@ public class Juego {
 					e.printStackTrace();
 				}
 			}
-			// COMPRUEBA QUE EL USUARIO ESTA GUARDADO EN EL FICHERO DE RECORDS. SI LO ESTA
-			// Y ADEMAS, SU PUNTUACION GUARDADA EN EL FICHERO ES MENOR QUE LA PUNTUACION
-			// ACTUAL, SE ACTUALIZA LA PUNTUACION DEL FICHERO.
-			// SI EL USUARIO QUE HA JUGADO NO ESTA GUARDADO EN EL FICHERO, SE INSERTA CON LA
-			// PUNTUACION OBTENIDA.
+
+			log.info("Operacion para crear el PDF.");
 			System.out.println("\nIntroduce tu nombre:");
 			String nombre = sc.nextLine();
 
@@ -200,6 +202,7 @@ public class Juego {
 
 			BufferedReader br;
 			try {
+				log.debug("CONSTRUCCION DEL PDF");
 				br = new BufferedReader(new FileReader(f_records));
 				BufferedWriter bw = new BufferedWriter(new FileWriter((Files.getRuta_files() + "records.txt"), true));
 				String s = null;

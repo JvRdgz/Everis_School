@@ -13,7 +13,7 @@
 -- SELECCIONAMOS EL JUEGO DE CARACTERES A UTILIZAR: WE8ISO8859P15 (incluye €, acentos y 'ñ') Y LA COLACIÓN.
 
 -- DROP DATABASE juego;
-
+/*
 CREATE DATABASE IF NOT EXISTS juego CHARACTER SET latin1 COLLATE latin1_spanish_ci;
 
 USE juego;
@@ -27,11 +27,12 @@ CREATE TABLE IF NOT EXISTS preguntas (
     respuesta_correcta VARCHAR(1024),
 	PRIMARY KEY (preguntaID)
 );
-
+*/
 -- INSERT INTO preguntas (pregunta, respuesta1, respuesta2, respuesta3, respuesta_correcta)
 -- VALUES('En que anio se produjo la catastrofe de Chernobyl?','1992','1986','1989','1986');
 -- DELETE FROM preguntas;
 
+USE juego;
 SELECT * FROM preguntas;
 
 -- USE dam;

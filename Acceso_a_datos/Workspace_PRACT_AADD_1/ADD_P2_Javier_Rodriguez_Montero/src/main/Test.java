@@ -18,7 +18,9 @@ public class Test {
 
 		int i = 0;
 		while (i < pregunta.size()) {
-			Pregunta p = new Pregunta(pregunta.get(i).getPregunta(), pregunta.get(i).getRespuesta1(), pregunta.get(i).getRespuesta2(), pregunta.get(i).getRespuesta3());
+			Pregunta p = new Pregunta(pregunta.get(i).getPregunta(), pregunta.get(i).getRespuesta1(),
+					pregunta.get(i).getRespuesta2(), pregunta.get(i).getRespuesta3(),
+					pregunta.get(i).getRespuesta_correcta());
 			System.out.println(p);
 			i++;
 		}

@@ -1,2 +1,2 @@
-Javier:70
-Pepe:10
+Pepe:20
+Javier:5

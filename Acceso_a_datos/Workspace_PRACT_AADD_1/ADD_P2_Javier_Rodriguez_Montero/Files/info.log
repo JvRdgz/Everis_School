@@ -1,0 +1,44 @@
+14:20:15,829  INFO Pregunta:227 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:21:09,150  INFO Pregunta:227 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:25:01,635  INFO Pregunta:261 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:27:57,968  INFO Pregunta:261 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:31:11,550  INFO Pregunta:261 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:33:03,795  INFO Pregunta:261 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:33:28,364  INFO Juego:148 - El ArrayList contiene las preguntas leidas de la base de datos.
+14:33:28,365  INFO Juego:150 - Hayamos el numero de preguntas.
+14:33:28,365  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:33:28,365  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:33:43,958  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:33:43,958  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:34:33,707  INFO Pregunta:261 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:34:47,887  INFO Juego:148 - El ArrayList contiene las preguntas leidas de la base de datos.
+14:34:47,887  INFO Juego:150 - Hayamos el numero de preguntas.
+14:34:47,888  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:34:47,893  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:34:59,463  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:34:59,463  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:35:28,394  INFO Juego:148 - El ArrayList contiene las preguntas leidas de la base de datos.
+14:35:28,395  INFO Juego:150 - Hayamos el numero de preguntas.
+14:35:28,395  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:35:28,395  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:35:40,069  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:35:40,070  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:36:30,607  INFO Pregunta:261 - A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.
+14:36:32,588  INFO Juego:148 - El ArrayList contiene las preguntas leidas de la base de datos.
+14:36:32,589  INFO Juego:150 - Hayamos el numero de preguntas.
+14:36:32,590  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:36:32,595  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:36:39,825  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:36:39,825  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:37:06,825  INFO Juego:197 - Operacion para crear el PDF.
+14:38:59,367  INFO Juego:148 - El ArrayList contiene las preguntas leidas de la base de datos.
+14:38:59,368  INFO Juego:150 - Hayamos el numero de preguntas.
+14:38:59,368  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:38:59,368  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:40:39,462  INFO Juego:148 - El ArrayList contiene las preguntas leidas de la base de datos.
+14:40:39,463  INFO Juego:150 - Hayamos el numero de preguntas.
+14:40:39,463  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:40:39,463  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:40:50,976  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
+14:40:50,977  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
+14:41:05,406  INFO Juego:197 - Operacion para crear el PDF.

@@ -10,6 +10,8 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.output.Format;
@@ -24,19 +26,13 @@ import properties.Persistencia;
 
 public class Pregunta {
 
+	private static Logger log = Logger.getLogger(Pregunta.class);
 	static Scanner sc = new Scanner(System.in);
 	private String pregunta;
 	private String respuesta1;
 	private String respuesta2;
 	private String respuesta3;
 	private String respuesta_correcta;
-
-	public Pregunta(String pregunta, String respuesta1, String respuesta2, String respuesta3) {
-		this.pregunta = pregunta;
-		this.respuesta1 = respuesta1;
-		this.respuesta2 = respuesta2;
-		this.respuesta3 = respuesta3;
-	}
 
 	public Pregunta() {
 		this.pregunta = "";
@@ -207,43 +203,102 @@ public class Pregunta {
 	}
 
 	public static void importar_preguntas() {
+		PropertyConfigurator.configure("./Properties/log4j.properties");
+		if (Persistencia.is_file_method()) {
 
-		File preguntas_txt = new File(Files.getFichero_preguntas());
-		File preguntas_xls = new File(Files.getFichero_xls());
-		if (!preguntas_txt.exists()) {
-			try {
-				preguntas_txt.createNewFile();
-			} catch (IOException e) {
-				System.err.println("\nERROR AL CREAR EL ARCHIVO.");
-				e.printStackTrace();
-			}
-		}
-		if (!preguntas_xls.exists()) {
-			System.out.println("\nNo existe el fichero " + Files.getFichero_xls() + ".\nDebe crearlo en " + "la ruta: "
-					+ Files.getRuta_files());
-		} else {
-			try {
-				BufferedWriter bw = new BufferedWriter(new FileWriter(Files.getFichero_preguntas(), true));
-				Workbook w = Workbook.getWorkbook(preguntas_xls);
-				Sheet sheet = w.getSheet(0);
-
-				for (int i = 0; i < sheet.getRows(); i++) {
-					String content = "";
-					for (int j = 0; j < sheet.getColumns(); j++) {
-						content += sheet.getCell(j, i).getContents() + "#";
-					}
-					// System.out.println(content);
-					bw.write(content);
-					bw.newLine();
+			File preguntas_txt = new File(Files.getFichero_preguntas());
+			File preguntas_xls = new File(Files.getFichero_xls());
+			if (!preguntas_txt.exists()) {
+				try {
+					preguntas_txt.createNewFile();
+				} catch (IOException e) {
+					System.err.println("\nERROR AL CREAR EL ARCHIVO.");
+					e.printStackTrace();
 				}
-				w.close();
-				bw.close();
-			} catch (BiffException e) {
-				System.err.println("\nERROR AL LEER EL FICHERO " + Files.getFichero_xls());
-				e.printStackTrace();
-			} catch (IOException e) {
-				System.err.println("\nERROR EN EL FLUJO DE ESCRITURA DE DATOS.");
-				e.printStackTrace();
+			}
+			if (!preguntas_xls.exists()) {
+				System.out.println("\nNo existe el fichero " + Files.getFichero_xls() + ".\nDebe crearlo en "
+						+ "la ruta: " + Files.getRuta_files());
+			} else {
+				try {
+					BufferedWriter bw = new BufferedWriter(new FileWriter(Files.getFichero_preguntas(), true));
+					Workbook w = Workbook.getWorkbook(preguntas_xls);
+					Sheet sheet = w.getSheet(0);
+
+					for (int i = 0; i < sheet.getRows(); i++) {
+						String content = "";
+						for (int j = 0; j < sheet.getColumns(); j++) {
+							content += sheet.getCell(j, i).getContents() + "#";
+						}
+						// System.out.println(content);
+						bw.write(content);
+						bw.newLine();
+					}
+					w.close();
+					bw.close();
+				} catch (BiffException e) {
+					System.err.println("\nERROR AL LEER EL FICHERO " + Files.getFichero_xls());
+					e.printStackTrace();
+				} catch (IOException e) {
+					System.err.println("\nERROR EN EL FLUJO DE ESCRITURA DE DATOS.");
+					e.printStackTrace();
+				}
+			}
+		} else {
+			File preguntas_xls = new File(Files.getFichero_xls());
+			if (!preguntas_xls.exists()) {
+				System.out.println("\nNo existe el fichero " + Files.getFichero_xls() + ".\nDebe crearlo en "
+						+ "la ruta: " + Files.getRuta_files());
+			} else {
+				PropertyConfigurator.configure("./Properties/log4j.properties");
+				PreguntaDAO.setConexion(ConexionDAO.getConexion());
+				log.debug("ESTABLECIENDO CONEXION PreguntaDAO");
+				try {
+					Workbook w = Workbook.getWorkbook(preguntas_xls);
+					Sheet sheet = w.getSheet(0);
+
+					log.debug("CONSTRUCCION DE PREGUNTA LEIDA A PARTIR DEL FICHERO EXCEL.");
+					log.info(
+							"A medida que se lee una fila, se crea una nueva pregunta. Mientras que se leen las celdas, se guarda el atributo correspondiente a la pregunta segun el valor de j.");
+					for (int i = 0; i < sheet.getRows(); i++) {
+						String content = "";
+						Pregunta p = new Pregunta();
+						log.debug("NUEVA PREGUNTA");
+						for (int j = 0; j < sheet.getColumns(); j++) {
+							content = sheet.getCell(j, i).getContents();
+							switch (j) {
+							case 0:
+								p.setPregunta(content);
+								log.debug("GUARDAMOS CONTENT QUE DEBERIA TENER EL CONTENIDO DE LA PREGUNTA.");
+								break;
+							case 1:
+								p.setRespuesta1(content);
+								log.debug("GUARDAMOS CONTENT QUE DEBERIA TENER EL CONTENIDO DE LA RESPUESTA 1.");
+								break;
+							case 2:
+								p.setRespuesta2(content);
+								log.debug("GUARDAMOS CONTENT QUE DEBERIA TENER EL CONTENIDO DE LA RESPUESTA 2.");
+								break;
+							case 3:
+								p.setRespuesta3(content);
+								log.debug("GUARDAMOS CONTENT QUE DEBERIA TENER EL CONTENIDO DE LA RESPUESTA 3.");
+								break;
+							case 4:
+								p.setRespuesta_correcta(content);
+								log.debug("GUARDAMOS CONTENT QUE DEBERIA TENER EL CONTENIDO DE LA RESPUESTA CORRECTA.");
+								break;
+							}
+						}
+						System.out.println(p);
+						PreguntaDAO.insertarPregunta(p);					}
+					w.close();
+				} catch (BiffException e) {
+					System.err.println("\nERROR AL LEER EL FICHERO " + Files.getFichero_xls());
+					e.printStackTrace();
+				} catch (IOException e) {
+					System.err.println("\nERROR EN EL FLUJO DE ESCRITURA DE DATOS.");
+					e.printStackTrace();
+				}
 			}
 		}
 	}
@@ -292,10 +347,8 @@ public class Pregunta {
 		return (this.pregunta + "#" + this.respuesta1 + "#" + this.respuesta2 + "#" + this.respuesta3 + "#"
 				+ this.respuesta_correcta);
 	}
+
 	public String toStringPersonalizadoSinRespuesta() {
-		return (this.pregunta + ": " + this.respuesta1 + " " + this.respuesta2 + " " + this.respuesta3);
-	}
-	public String toStringPersonalizadoSinAlmohadillas() {
-		return (this.pregunta + ": " + this.respuesta1 + " " + this.respuesta2 + " " + this.respuesta3);
+		return (this.pregunta + ": " + this.respuesta1 + " | " + this.respuesta2 + " | " + this.respuesta3 + " |");
 	}
 }

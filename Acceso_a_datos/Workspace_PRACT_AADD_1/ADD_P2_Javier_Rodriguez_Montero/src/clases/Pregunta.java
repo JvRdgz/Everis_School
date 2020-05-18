@@ -52,8 +52,9 @@ public class Pregunta {
 	}
 
 	public static void escribir_XML() {
-
+		PropertyConfigurator.configure("./Properties/log4j.properties");
 		if (Persistencia.is_file_method()) {
+			log.info("Escribir XML leyendo desde fichero.");
 			try {
 				Pregunta p;
 
@@ -107,6 +108,7 @@ public class Pregunta {
 				e.printStackTrace();
 			}
 		} else {
+			log.info("Escribir XML leyendo desde base de datos.");
 			PreguntaDAO.setConexion(ConexionDAO.getConexion());
 			ArrayList<Pregunta> preguntas = PreguntaDAO.consultarPreguntas();
 			Pregunta p;
@@ -250,7 +252,6 @@ public class Pregunta {
 				System.out.println("\nNo existe el fichero " + Files.getFichero_xls() + ".\nDebe crearlo en "
 						+ "la ruta: " + Files.getRuta_files());
 			} else {
-				PropertyConfigurator.configure("./Properties/log4j.properties");
 				PreguntaDAO.setConexion(ConexionDAO.getConexion());
 				log.debug("ESTABLECIENDO CONEXION PreguntaDAO");
 				try {
@@ -290,7 +291,8 @@ public class Pregunta {
 							}
 						}
 						System.out.println(p);
-						PreguntaDAO.insertarPregunta(p);					}
+						PreguntaDAO.insertarPregunta(p);
+					}
 					w.close();
 				} catch (BiffException e) {
 					System.err.println("\nERROR AL LEER EL FICHERO " + Files.getFichero_xls());

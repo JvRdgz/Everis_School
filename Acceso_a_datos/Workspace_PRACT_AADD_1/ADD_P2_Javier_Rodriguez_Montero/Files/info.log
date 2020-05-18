@@ -42,3 +42,5 @@
 14:40:50,976  INFO Juego:164 - Objeto pregunta p, para guardar las preguntas
 14:40:50,977  INFO Juego:168 - Mostramos la pregunta sin la respuesta.
 14:41:05,406  INFO Juego:197 - Operacion para crear el PDF.
+15:14:33,866  INFO Menu:25 - Datos recogidos del fichero persistencia.properties
+15:17:30,088  INFO Menu:25 - Datos recogidos del fichero persistencia.properties

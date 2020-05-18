@@ -3,14 +3,18 @@ package clases;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import base_de_datos.ConexionDAO;
 import properties.Persistencia;
 
 public class Menu {
 
 	static Scanner sc = new Scanner(System.in);
-
+	private static Logger log = Logger.getLogger(Menu.class);
 	public static void menuPrincipal() {
+		PropertyConfigurator.configure("./Properties/log4j.properties");
 		int op = 0, puntuacion = 0;
 		String exit = "";
 		Pregunta p = new Pregunta();
@@ -18,6 +22,7 @@ public class Menu {
 		ArrayList<Pregunta> preguntas = new ArrayList<Pregunta>();
 		if (Persistencia.getMethod().equalsIgnoreCase("file"))
 			Juego.crear_ruta_ficheros();
+		log.info("Datos recogidos del fichero persistencia.properties");
 		System.out.println(ConexionDAO.getBd());
 		System.out.println(ConexionDAO.getUser());
 		System.out.println(ConexionDAO.getPassword());

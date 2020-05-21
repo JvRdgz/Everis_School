@@ -1,12 +1,61 @@
 package interfaz_grafica;
 
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.imageio.ImageIO;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle.ComponentPlacement;
+
+import clases.Cliente;
+import operaciones_DAO.ClienteDAO;
+import operaciones_DAO.ConexionDAO;
+
+import javax.swing.JTextField;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 /**
  *
  * @author Javier Rodríguez Montero
  */
 public class InterfazFormulario extends javax.swing.JFrame {
+
+	/*
+	 * public class VentanaImagen extends JPanel {
+	 * 
+	 *//**
+		* 
+		*/
+	/*
+	
+	*//**
+		 * Create the panel.
+		 *//*
+			 * 
+			 * public VentanaImagen() { this.setSize(570, 230);
+			 * 
+			 * String rutaImg = "." + File.separator + "img" + File.separator +
+			 * "Bienvenido.png"; ImageIcon imageIcon = new
+			 * ImageIcon(this.getClass().getResource(rutaImg)); JLabel label = new
+			 * JLabel(imageIcon); add(label);
+			 * 
+			 * }
+			 * 
+			 * public void paint(Graphics grafico) { Dimension height = getSize(); ImageIcon
+			 * Img = new ImageIcon( getClass().getResource("." + File.separator + "img" +
+			 * File.separator + "Bienvenido.png")); grafico.drawImage(Img.getImage(), 0, 0,
+			 * height.width, height.height, null); setOpaque(false);
+			 * super.paintComponent(grafico); } }
+			 */
 
 	/**
 	 * 
@@ -66,13 +115,15 @@ public class InterfazFormulario extends javax.swing.JFrame {
 		jLabelSignIn.setText("Sign In");
 
 		javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+		jPanel2Layout.setHorizontalGroup(jPanel2Layout.createParallelGroup(Alignment.LEADING)
+				.addGroup(jPanel2Layout.createSequentialGroup().addGap(130)
+						.addComponent(jLabelSignIn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addGap(138)));
+		jPanel2Layout.setVerticalGroup(jPanel2Layout.createParallelGroup(Alignment.LEADING)
+				.addGroup(jPanel2Layout.createSequentialGroup().addGap(34)
+						.addComponent(jLabelSignIn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addGap(34)));
 		jPanel2.setLayout(jPanel2Layout);
-		jPanel2Layout.setHorizontalGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(jPanel2Layout.createSequentialGroup().addGap(131, 131, 131).addComponent(jLabelSignIn)
-						.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
-		jPanel2Layout.setVerticalGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(jPanel2Layout.createSequentialGroup().addGap(34, 34, 34).addComponent(jLabelSignIn)
-						.addContainerGap(34, Short.MAX_VALUE)));
 
 		jLabel1.setFont(new java.awt.Font("Bitstream Vera Serif", 0, 12)); // NOI18N
 		jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -111,45 +162,40 @@ public class InterfazFormulario extends javax.swing.JFrame {
 		});
 
 		javax.swing.GroupLayout jPanelSignInLayout = new javax.swing.GroupLayout(jPanelSignIn);
+		jPanelSignInLayout.setHorizontalGroup(jPanelSignInLayout.createParallelGroup(Alignment.TRAILING)
+				.addGroup(jPanelSignInLayout.createSequentialGroup().addContainerGap()
+						.addGroup(jPanelSignInLayout.createParallelGroup(Alignment.LEADING)
+								.addComponent(jPanel2, GroupLayout.DEFAULT_SIZE, 354, Short.MAX_VALUE)
+								.addGroup(jPanelSignInLayout.createSequentialGroup()
+										.addComponent(jLabel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addGap(302))
+								.addGroup(jPanelSignInLayout.createSequentialGroup()
+										.addComponent(jLabel2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addGap(280)))
+						.addContainerGap())
+				.addGroup(jPanelSignInLayout.createSequentialGroup().addGap(144)
+						.addComponent(jButtonSignIn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+								Short.MAX_VALUE)
+						.addGap(152))
+				.addGroup(jPanelSignInLayout.createSequentialGroup().addGap(84)
+						.addGroup(jPanelSignInLayout.createParallelGroup(Alignment.TRAILING)
+								.addComponent(jTextFieldContrasena, GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
+								.addComponent(jTextFieldUsuario, GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE))
+						.addGap(60)));
+		jPanelSignInLayout.setVerticalGroup(jPanelSignInLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(jPanelSignInLayout.createSequentialGroup().addContainerGap()
+						.addComponent(jPanel2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE)
+						.addGap(109).addComponent(jLabel1).addGap(35)
+						.addComponent(jTextFieldUsuario, GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE).addGap(55)
+						.addComponent(jLabel2).addGap(35)
+						.addComponent(jTextFieldContrasena, GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE).addGap(80)
+						.addComponent(jButtonSignIn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+								Short.MAX_VALUE)
+						.addGap(48)));
 		jPanelSignIn.setLayout(jPanelSignInLayout);
-		jPanelSignInLayout.setHorizontalGroup(jPanelSignInLayout
-				.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(jPanelSignInLayout.createSequentialGroup().addContainerGap().addGroup(jPanelSignInLayout
-						.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(jPanelSignInLayout.createSequentialGroup()
-								.addGroup(jPanelSignInLayout
-										.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-										.addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE,
-												javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-										.addGroup(jPanelSignInLayout.createSequentialGroup().addComponent(jLabel1)
-												.addGap(0, 0, Short.MAX_VALUE)))
-								.addContainerGap())
-						.addGroup(jPanelSignInLayout.createSequentialGroup().addComponent(jLabel2)
-								.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-				.addGroup(jPanelSignInLayout.createSequentialGroup().addGap(144, 144, 144).addComponent(jButtonSignIn)
-						.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-				.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelSignInLayout.createSequentialGroup()
-						.addContainerGap(84, Short.MAX_VALUE)
-						.addGroup(jPanelSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-								.addComponent(jTextFieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 234,
-										javax.swing.GroupLayout.PREFERRED_SIZE)
-								.addComponent(jTextFieldUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 234,
-										javax.swing.GroupLayout.PREFERRED_SIZE))
-						.addGap(60, 60, 60)));
-		jPanelSignInLayout
-				.setVerticalGroup(jPanelSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(jPanelSignInLayout.createSequentialGroup().addContainerGap()
-								.addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE,
-										javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-								.addGap(109, 109, 109).addComponent(jLabel1).addGap(35, 35, 35)
-								.addComponent(jTextFieldUsuario, javax.swing.GroupLayout.PREFERRED_SIZE,
-										javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-								.addGap(55, 55, 55).addComponent(jLabel2).addGap(35, 35, 35)
-								.addComponent(jTextFieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE,
-										javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-										javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(jButtonSignIn).addGap(48, 48, 48)));
 
 		jPanelSignUp.setBackground(new java.awt.Color(35, 0, 106));
 
@@ -162,19 +208,14 @@ public class InterfazFormulario extends javax.swing.JFrame {
 		jLabelSignUp.setMinimumSize(new java.awt.Dimension(89, 33));
 
 		javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+		jPanel4Layout.setHorizontalGroup(jPanel4Layout.createParallelGroup(Alignment.TRAILING)
+				.addGroup(jPanel4Layout.createSequentialGroup().addGap(123)
+						.addComponent(jLabelSignUp, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addGap(109)));
+		jPanel4Layout.setVerticalGroup(jPanel4Layout.createParallelGroup(Alignment.LEADING)
+				.addGroup(jPanel4Layout.createSequentialGroup().addGap(34)
+						.addComponent(jLabelSignUp, GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE).addGap(34)));
 		jPanel4.setLayout(jPanel4Layout);
-		jPanel4Layout
-				.setHorizontalGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-								.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(jLabelSignUp, javax.swing.GroupLayout.PREFERRED_SIZE,
-										javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-								.addGap(122, 122, 122)));
-		jPanel4Layout.setVerticalGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(jPanel4Layout.createSequentialGroup().addGap(34, 34, 34)
-						.addComponent(jLabelSignUp, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(34, Short.MAX_VALUE)));
 
 		jLabel3.setFont(new java.awt.Font("Bitstream Vera Serif", 0, 12)); // NOI18N
 		jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -269,143 +310,206 @@ public class InterfazFormulario extends javax.swing.JFrame {
 			}
 		});
 
+		jTextFieldDireccion = new JTextField();
+		jTextFieldDireccion.setForeground(Color.BLACK);
+		jTextFieldDireccion.setFont(new Font("Bitstream Vera Serif", Font.PLAIN, 12));
+		jTextFieldDireccion.setBackground(Color.WHITE);
+
 		javax.swing.GroupLayout jPanelSignUpLayout = new javax.swing.GroupLayout(jPanelSignUp);
-		jPanelSignUp.setLayout(jPanelSignUpLayout);
-		jPanelSignUpLayout.setHorizontalGroup(jPanelSignUpLayout
-				.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(jPanelSignUpLayout.createSequentialGroup().addGroup(
-						jPanelSignUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(
-								jPanelSignUpLayout.createSequentialGroup().addContainerGap().addGroup(jPanelSignUpLayout
-										.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(
-												jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE,
-												javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-										.addGroup(jPanelSignUpLayout.createSequentialGroup()
-												.addGroup(jPanelSignUpLayout
-														.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-														.addComponent(jLabel3).addComponent(jLabel4)
-														.addComponent(jLabel5).addComponent(jLabel6))
-												.addGap(0, 0, Short.MAX_VALUE))))
-								.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelSignUpLayout
-										.createSequentialGroup().addContainerGap().addComponent(jRadioButtonCalle)
-										.addPreferredGap(
-												javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-										.addComponent(jRadioButtonAvenida).addGap(49, 49, 49)
-										.addComponent(jRadioButtonBoulevard))
-								.addGroup(jPanelSignUpLayout.createSequentialGroup().addGap(59, 59, 59)
-										.addGroup(jPanelSignUpLayout
-												.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-												.addComponent(jTextFieldFax, javax.swing.GroupLayout.PREFERRED_SIZE,
-														234, javax.swing.GroupLayout.PREFERRED_SIZE)
-												.addComponent(jTextFieldTelefonoContacto,
-														javax.swing.GroupLayout.PREFERRED_SIZE, 234,
-														javax.swing.GroupLayout.PREFERRED_SIZE)
-												.addComponent(jTextFieldNombreCliente,
-														javax.swing.GroupLayout.PREFERRED_SIZE, 234,
-														javax.swing.GroupLayout.PREFERRED_SIZE)
-												.addComponent(jTextFieldNombreContacto,
-														javax.swing.GroupLayout.PREFERRED_SIZE, 234,
-														javax.swing.GroupLayout.PREFERRED_SIZE)
-												.addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 234,
-														javax.swing.GroupLayout.PREFERRED_SIZE))
-										.addGap(0, 0, Short.MAX_VALUE)))
+		jPanelSignUpLayout.setHorizontalGroup(jPanelSignUpLayout.createParallelGroup(Alignment.TRAILING)
+				.addGroup(jPanelSignUpLayout.createSequentialGroup().addGroup(jPanelSignUpLayout
+						.createParallelGroup(Alignment.TRAILING)
+						.addGroup(jPanelSignUpLayout.createSequentialGroup().addContainerGap()
+								.addGroup(jPanelSignUpLayout.createParallelGroup(Alignment.LEADING)
+										.addComponent(jPanel4, GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE)
+										.addGroup(jPanelSignUpLayout.createSequentialGroup().addGroup(jPanelSignUpLayout
+												.createParallelGroup(Alignment.LEADING)
+												.addGroup(jPanelSignUpLayout.createSequentialGroup()
+														.addComponent(jLabel3, GroupLayout.DEFAULT_SIZE, 141,
+																Short.MAX_VALUE)
+														.addGap(10))
+												.addGroup(jPanelSignUpLayout.createSequentialGroup()
+														.addComponent(jLabel4, GroupLayout.DEFAULT_SIZE, 148,
+																Short.MAX_VALUE)
+														.addGap(3))
+												.addComponent(jLabel5, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
+												.addGroup(jPanelSignUpLayout.createSequentialGroup()
+														.addComponent(jLabel6, GroupLayout.DEFAULT_SIZE, 55,
+																Short.MAX_VALUE)
+														.addGap(96)))
+												.addGap(196))))
+						.addGroup(jPanelSignUpLayout.createSequentialGroup().addContainerGap()
+								.addComponent(jRadioButtonCalle, GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+								.addGap(67)
+								.addComponent(jRadioButtonAvenida, GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+								.addGap(49)
+								.addComponent(jRadioButtonBoulevard, GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE))
+						.addGroup(jPanelSignUpLayout.createSequentialGroup().addGap(59).addGroup(jPanelSignUpLayout
+								.createParallelGroup(Alignment.TRAILING)
+								.addComponent(jTextFieldNombreContacto, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
+								.addComponent(jTextFieldNombreCliente, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
+								.addComponent(jTextFieldTelefonoContacto, GroupLayout.DEFAULT_SIZE, 252,
+										Short.MAX_VALUE)
+								.addComponent(jTextFieldFax, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE))
+								.addGap(48)))
 						.addContainerGap())
-				.addGroup(jPanelSignUpLayout.createSequentialGroup().addGap(141, 141, 141).addComponent(jButtonSignUp)
-						.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
-		jPanelSignUpLayout.setVerticalGroup(jPanelSignUpLayout
-				.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+				.addGroup(jPanelSignUpLayout.createSequentialGroup().addGap(146)
+						.addComponent(jButtonSignUp, GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE).addGap(116))
+				.addGroup(Alignment.LEADING,
+						jPanelSignUpLayout.createSequentialGroup().addGap(61)
+								.addGroup(jPanelSignUpLayout.createParallelGroup(Alignment.LEADING)
+										.addGroup(jPanelSignUpLayout.createSequentialGroup()
+												.addComponent(jTextFieldDireccion, GroupLayout.DEFAULT_SIZE, 206,
+														Short.MAX_VALUE)
+												.addGap(58))
+										.addGroup(jPanelSignUpLayout.createSequentialGroup()
+												.addComponent(jComboBox1, 0, 252, Short.MAX_VALUE).addGap(58)))));
+		jPanelSignUpLayout.setVerticalGroup(jPanelSignUpLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(jPanelSignUpLayout.createSequentialGroup().addContainerGap()
-						.addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jLabel3)
-						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(jTextFieldNombreCliente, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addGap(18, 18, 18).addComponent(jLabel4)
-						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(jTextFieldNombreContacto, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addGap(18, 18, 18).addComponent(jLabel5)
-						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(jTextFieldTelefonoContacto, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addGap(18, 18, 18).addComponent(jLabel6)
-						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(jTextFieldFax, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addGap(32, 32, 32)
-						.addGroup(jPanelSignUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-								.addComponent(jRadioButtonCalle).addComponent(jRadioButtonAvenida)
-								.addComponent(jRadioButtonBoulevard))
-						.addGap(18, 18, 18)
-						.addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
-						.addComponent(jButtonSignUp).addGap(51, 51, 51)));
+						.addComponent(jPanel4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(ComponentPlacement.RELATED).addComponent(jLabel3)
+						.addPreferredGap(ComponentPlacement.RELATED)
+						.addComponent(jTextFieldNombreCliente, GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE).addGap(18)
+						.addComponent(jLabel4).addPreferredGap(ComponentPlacement.RELATED)
+						.addComponent(jTextFieldNombreContacto, GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+						.addGap(18).addComponent(jLabel5).addPreferredGap(ComponentPlacement.RELATED)
+						.addComponent(jTextFieldTelefonoContacto, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE)
+						.addGap(26)
+						.addGroup(jPanelSignUpLayout.createParallelGroup(Alignment.TRAILING, false)
+								.addGroup(jPanelSignUpLayout.createSequentialGroup().addComponent(jLabel6).addGap(57))
+								.addGroup(jPanelSignUpLayout.createSequentialGroup()
+										.addComponent(jTextFieldFax, GroupLayout.PREFERRED_SIZE,
+												GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+										.addGap(35)))
+						.addGroup(jPanelSignUpLayout
+								.createParallelGroup(Alignment.BASELINE).addComponent(jRadioButtonCalle)
+								.addComponent(jRadioButtonAvenida).addComponent(jRadioButtonBoulevard))
+						.addPreferredGap(ComponentPlacement.UNRELATED)
+						.addComponent(jTextFieldDireccion, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE)
+						.addGap(27)
+						.addComponent(jComboBox1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE)
+						.addGap(18).addComponent(jButtonSignUp, GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+						.addGap(51)));
+		jPanelSignUp.setLayout(jPanelSignUpLayout);
 
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-		getContentPane().setLayout(layout);
-		layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(layout.createSequentialGroup()
-						.addComponent(jPanelSignIn, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jPanelSignUp,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE,
-								Short.MAX_VALUE)));
-		layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup().addContainerGap()
-						.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-								.addComponent(jPanelSignUp, javax.swing.GroupLayout.DEFAULT_SIZE,
-										javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(jPanelSignIn, javax.swing.GroupLayout.DEFAULT_SIZE,
-										javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+		layout.setHorizontalGroup(layout.createParallelGroup(Alignment.LEADING).addGroup(Alignment.TRAILING,
+				layout.createSequentialGroup()
+						.addComponent(jPanelSignIn, GroupLayout.PREFERRED_SIZE, 372, Short.MAX_VALUE)
+						.addPreferredGap(ComponentPlacement.RELATED)
+						.addComponent(jPanelSignUp, GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)));
+		layout.setVerticalGroup(layout.createParallelGroup(Alignment.TRAILING)
+				.addGroup(layout.createSequentialGroup().addContainerGap()
+						.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+								.addComponent(jPanelSignIn, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 576,
+										Short.MAX_VALUE)
+								.addComponent(jPanelSignUp, Alignment.LEADING, GroupLayout.DEFAULT_SIZE,
+										GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 						.addContainerGap()));
+		getContentPane().setLayout(layout);
 
 		pack();
 	}// </editor-fold>//GEN-END:initComponents
 
 	private void jTextFieldContrasenaActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextFieldContrasenaActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jTextFieldContrasenaActionPerformed
 
 	private void jTextFieldUsuarioActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextFieldUsuarioActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jTextFieldUsuarioActionPerformed
 
 	private void jButtonSignInActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButtonSignInActionPerformed
-		// TODO add your handling code here:
+		boolean existe = Cliente.existeCodClienteLogIn(Integer.parseInt(jTextFieldUsuario.getText().toString()));
+		boolean contrasenaCorrecta = Cliente.comprobarContrasena(jTextFieldContrasena.getText().toString(),
+				Integer.parseInt(jTextFieldUsuario.getText().toString()));
+		if (jTextFieldContrasena.getText().isEmpty() || jTextFieldUsuario.getText().isEmpty())
+			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.", "Error", JOptionPane.WARNING_MESSAGE);
+		else {
+			if (existe == false)
+				JOptionPane.showMessageDialog(this, "El usuario introducido no existe.", "Error",
+						JOptionPane.WARNING_MESSAGE);
+			else {
+				if (contrasenaCorrecta == false)
+					JOptionPane.showMessageDialog(this, "La contraseña no es correcta.", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				else {
+					JOptionPane.showMessageDialog(this, "Login correcto.");
+					// VentanaImagen frame = new VentanaImagen();
+					// frame.setVisible(true);
+					// "." + File.separator + "img" + File.separator + "Bienvenido.png"
+					// BufferedImage myPicture = ImageIO.read(new File("." + File.separator + "img"
+					// + File.separator + "Bienvenido.png"));
+					// JLabel picLabel = new JLabel(new ImageIcon(myPicture));
+					/*
+					 * JLabel picLabel = new JLabel(); picLabel.setIcon(new javax.swing.ImageIcon(
+					 * getClass().getResource("." + File.separator + "img" + File.separator +
+					 * "Bienvenido.png"))); add(picLabel); picLabel.setVisible(true);
+					 */
+					/*
+					 * JFrame frame = new JFrame(); frame.add(new VentanaImagen());
+					 * frame.setVisible(true); frame.setPreferredSize(new Dimension(200, 300));
+					 */
+					/*
+					 * VentanaImagen imagen = new VentanaImagen(); jPanel1.add(imagen);
+					 * jPanel1.repaint(); imagen.setVisible(true);
+					 */
+				}
+			}
+		}
 	}// GEN-LAST:event_jButtonSignInActionPerformed
 
 	private void jTextFieldNombreContactoActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextFieldNombreContactoActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jTextFieldNombreContactoActionPerformed
 
 	private void jTextFieldNombreClienteActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextFieldNombreClienteActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jTextFieldNombreClienteActionPerformed
 
 	private void jTextFieldFaxActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextFieldFaxActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jTextFieldFaxActionPerformed
 
 	private void jTextFieldTelefonoContactoActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextFieldTelefonoContactoActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jTextFieldTelefonoContactoActionPerformed
 
 	private void jRadioButtonCalleActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jRadioButtonCalleActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jRadioButtonCalleActionPerformed
 
 	private void jRadioButtonAvenidaActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jRadioButtonAvenidaActionPerformed
-		// TODO add your handling code here:
 	}// GEN-LAST:event_jRadioButtonAvenidaActionPerformed
 
 	private void jButtonSignUpActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButtonSignUpActionPerformed
-		// TODO add your handling code here:
+		// || jRadioButtonAvenida.isSelected() || jRadioButtonBoulevard.isSelected() ||
+		// jRadioButtonCalle.isSelected()
 		if (jTextFieldNombreCliente.getText().isEmpty() || jTextFieldNombreContacto.getText().isEmpty()
 				|| jTextFieldTelefonoContacto.getText().isEmpty() || jTextFieldFax.getText().isEmpty()) {
-			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.");
+			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.(Registro)", "Error",
+					JOptionPane.WARNING_MESSAGE);
 		} else {
-			// accion del boton registrar.
+			boolean existe = Cliente.comprobarExisteCliente(jTextFieldNombreCliente.getText().toString());
+			if (existe == true) {
+				JOptionPane.showMessageDialog(this, "El usuario ya existe.", "Error", JOptionPane.ERROR_MESSAGE);
+				jTextFieldNombreCliente.setText("");
+			} else {
+				Cliente c;
+				String direccion = "";
+				if (jRadioButtonAvenida.isSelected()) {
+					direccion = jRadioButtonAvenida.getText().toString() + " "
+							+ jTextFieldDireccion.getText().toString();
+				} else if (jRadioButtonBoulevard.isSelected()) {
+					direccion = jRadioButtonBoulevard.getText().toString() + " "
+							+ jTextFieldDireccion.getText().toString();
+				} else if (jRadioButtonCalle.isSelected())
+					direccion = jRadioButtonCalle.getText().toString() + " " + jTextFieldDireccion.getText().toString();
+				c = new Cliente(jTextFieldNombreCliente.getText().toString(),
+						jTextFieldNombreContacto.getText().toString(), jTextFieldTelefonoContacto.getText().toString(),
+						jTextFieldFax.getText().toString(), direccion,
+						(String) jComboBox1.getSelectedItem().toString());
+				ClienteDAO.setConexion(ConexionDAO.getConexion());
+				ClienteDAO.registrarCliente(c);
+				JOptionPane.showMessageDialog(this, "Cliente registrado correctamente.");
+			}
 		}
 	}// GEN-LAST:event_jButtonSignUpActionPerformed
 
@@ -469,6 +573,7 @@ public class InterfazFormulario extends javax.swing.JFrame {
 	private javax.swing.JPanel jPanel4;
 	private javax.swing.JPanel jPanelSignIn;
 	private javax.swing.JPanel jPanelSignUp;
+	// private javax.swing.JPanel jPanel1; // jPanel DE LA VentanaImagen.
 	private javax.swing.JRadioButton jRadioButtonAvenida;
 	private javax.swing.JRadioButton jRadioButtonBoulevard;
 	private javax.swing.JRadioButton jRadioButtonCalle;
@@ -478,5 +583,5 @@ public class InterfazFormulario extends javax.swing.JFrame {
 	private javax.swing.JTextField jTextFieldNombreContacto;
 	private javax.swing.JTextField jTextFieldTelefonoContacto;
 	private javax.swing.JTextField jTextFieldUsuario;
-	// End of variables declaration//GEN-END:variables
+	private javax.swing.JTextField jTextFieldDireccion;
 }

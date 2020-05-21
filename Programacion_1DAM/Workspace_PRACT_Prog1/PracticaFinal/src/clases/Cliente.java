@@ -1,5 +1,10 @@
 package clases;
 
+import java.util.ArrayList;
+
+import operaciones_DAO.ClienteDAO;
+import operaciones_DAO.ConexionDAO;
+
 public class Cliente {
 
 	private int codigo_cliente; // AUTOINCREMENT
@@ -16,18 +21,13 @@ public class Cliente {
 	private String codigo_postal; // DEFAULT NULL
 	private int codigo_empleado_rep_ventas; // CLASE EMPLEADO. DEFAULT NULL
 	private double limite_credito; // DEFAULT NULL
-	private static int num_id_cliente = 0;
 
 	// CONSTRUCTOR PARA REGISTRAR CLIENTE
 	public Cliente(String nombre_cliente, String nombre_contacto, String telefono, String fax, String linea_direccion1,
 			String ciudad) {
-		// SE QUE ES UNA GUARRADA, PERO AL NO SER EL codigo_cliente AUTOINCREMENT EN LA
-		// BBDD,
-		// TENGO QUE GUARDARLO DE FORMA SEMI-AUTOMATICA A PARTIR DEL VALOR DEL ULTIMO
-		// CLIENTE
-		// INSERTADO CUYO ID ES 38.
-		num_id_cliente++;
-		this.codigo_cliente = 38 + num_id_cliente;
+		// AL NO SER EL codigo_cliente AUTOINCREMENT EN LA BBDD,
+		// TENGO QUE GUARDARLO DE FORMA AUTOMATICA A PARTIR DEL VALOR DEL ULTIMO CLIENTE
+		this.codigo_cliente = getUltimoCodigoCliete() + 1;
 		this.nombre_cliente = nombre_cliente;
 		this.nombre_contacto = nombre_contacto;
 		this.apellido_contacto = null;
@@ -62,6 +62,66 @@ public class Cliente {
 		this.codigo_postal = codigo_postal;
 		this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
 		this.limite_credito = limite_credito;
+	}
+
+	// DEVUELVE EL CODIGO DE CLIENTE DEL ULTIMO CLIENTE INSERTADO EN LA BASE DE
+	// DATOS.
+	private int getUltimoCodigoCliete() {
+		int codCliente = 0;
+		ClienteDAO.setConexion(ConexionDAO.getConexion());
+		ArrayList<Cliente> arrCliente = new ArrayList<Cliente>();
+		arrCliente = ClienteDAO.consultarClientes();
+		int j = 0;
+		while (j < arrCliente.size()) {
+			codCliente = arrCliente.get(j).getCodigo_cliente();
+			j++;
+		}
+		return codCliente;
+	}
+
+	// SI EL RESULTADO ES TRUE, ES QUE EL USUARIO EXISTE EN LA BASE DE DATOS.
+	public static boolean existeCodClienteLogIn(int codCliente) {
+		boolean result = false;
+		ClienteDAO.setConexion(ConexionDAO.getConexion());
+		ArrayList<Cliente> arrCliente = new ArrayList<Cliente>();
+		arrCliente = ClienteDAO.consultarClientes();
+		for (int i = 0; i < arrCliente.size(); i++) {
+			if (codCliente == arrCliente.get(i).getCodigo_cliente()) {
+				result = true;
+			}
+		}
+		return result;
+	}
+
+	// SI EL RESULTADO ES TRUE, ES QUE LA CONTRASEÑA ES CORRECTA Y COINCIDE CON EL
+	// CODIGO DE CLIENTE.
+	public static boolean comprobarContrasena(String nombreCliente, int codCliente) {
+		boolean result = false;
+		ClienteDAO.setConexion(ConexionDAO.getConexion());
+		ArrayList<Cliente> arrCliente = new ArrayList<Cliente>();
+		arrCliente = ClienteDAO.consultarClientes();
+		for (int i = 0; i < arrCliente.size(); i++) {
+			if (codCliente == arrCliente.get(i).getCodigo_cliente()
+					&& nombreCliente.equals(arrCliente.get(i).getNombre_cliente())) {
+				result = true;
+			}
+		}
+		return result;
+	}
+
+	// PARA REGISTRO DE NUEVOS USUARIOS.
+	// SI EL RESULTADO ES TRUE, ES QUE EL USUARIO YA EXISTE EN LA BASE DE DATOS
+	public static boolean comprobarExisteCliente(String nombreCliente) {
+		boolean result = false;
+		ClienteDAO.setConexion(ConexionDAO.getConexion());
+		ArrayList<Cliente> arrCliente = new ArrayList<Cliente>();
+		arrCliente = ClienteDAO.consultarClientes();
+		for (int i = 0; i < arrCliente.size(); i++) {
+			if (nombreCliente.equalsIgnoreCase(arrCliente.get(i).getNombre_cliente())) {
+				result = true;
+			}
+		}
+		return result;
 	}
 
 	public int getCodigo_cliente() {
@@ -174,6 +234,16 @@ public class Cliente {
 
 	public void setLimite_credito(double limite_credito) {
 		this.limite_credito = limite_credito;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [codigo_cliente=" + codigo_cliente + ", nombre_cliente=" + nombre_cliente + ", nombre_contacto="
+				+ nombre_contacto + ", apellido_contacto=" + apellido_contacto + ", telefono=" + telefono + ", fax="
+				+ fax + ", linea_direccion1=" + linea_direccion1 + ", linea_direccion2=" + linea_direccion2
+				+ ", ciudad=" + ciudad + ", region=" + region + ", pais=" + pais + ", codigo_postal=" + codigo_postal
+				+ ", codigo_empleado_rep_ventas=" + codigo_empleado_rep_ventas + ", limite_credito=" + limite_credito
+				+ "]";
 	}
 
 	/**

@@ -2,7 +2,10 @@ package operaciones_DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 import clases.Cliente;
 
@@ -49,6 +52,41 @@ public class ClienteDAO {
 		} catch (SQLException e) {
 			System.err.println("\n\tERROR SQL CON LA BASE DE DATOS.");
 			e.printStackTrace();
+		}
+	}
+
+	public static ArrayList<Cliente> consultarClientes() {
+		ArrayList<Cliente> arr_clientes = new ArrayList<Cliente>();
+		try {
+			Statement st = conexion.createStatement();
+			ResultSet rs = st.executeQuery("SELECT * FROM cliente;");
+			// EL ResultSet ES UN ARRAY DE VARIAS TABLAS.
+			while (rs.next()) {
+				int codigo_cliente = rs.getInt("codigo_cliente");
+				String nombre_cliente = rs.getString("nombre_cliente");
+				String nombre_contacto = rs.getString("nombre_contacto");
+				String apellido_contacto = rs.getString("apellido_contacto");
+				String telefono = rs.getString("telefono");
+				String fax = rs.getString("fax");
+				String linea_direccion1 = rs.getString("linea_direccion1");
+				String linea_direccion2 = rs.getString("linea_direccion2");
+				String ciudad = rs.getString("ciudad");
+				String region = rs.getString("region");
+				String pais = rs.getString("pais");
+				String codigo_postal = rs.getString("codigo_postal");
+				int codigo_empleado_rep_ventas = rs.getInt("codigo_empleado_rep_ventas");
+				double limite_credito = rs.getDouble("limite_credito");
+				Cliente c = new Cliente(codigo_cliente, nombre_cliente, nombre_contacto, apellido_contacto, telefono,
+						fax, linea_direccion1, linea_direccion2, ciudad, region, pais, codigo_postal,
+						codigo_empleado_rep_ventas, limite_credito);
+				// System.out.println(c);
+				arr_clientes.add(c);
+			}
+			conexion.commit();
+			return arr_clientes;
+		} catch (SQLException e) {
+			System.err.println("\n\tERROR AL LEER DATOS EN LA TABLA.");
+			return null;
 		}
 	}
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PMDDMM_P4_Javier_Rodriguez_Montero</string>
+    <string name="txtVTituloLogIn">INICIAR SESION</string>
+    <string name="ediTextLogInNombreUsuario">Nombre de usuario</string>
+    <string name="ediTextLogInContrasenaUsuario">Contraseña</string>
+    <string name="buttonLogIn">Continuar</string>
+    <string name="buttonLogInRegistrar">Registrarse</string>
+    <string name="txtVTituloRegistrarse">REGISTRARSE</string>
+    <string name="ediTextRegistrarNombreUsuario">Nombre de usuario</string>
+    <string name="ediTextRegistrarseContrasenaUsuario">Contraseña</string>
+    <string name="ediTextRegistrarseContrasenaUsuarioRep">Repita contraseña</string>
+    <string name="textViewBienvenida">TE DAMOS LA BIENVENIDA!</string>
+    <string name="buttonRegistrarRegistrar">Guardar</string>
+</resources>

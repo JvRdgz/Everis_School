@@ -1,7 +1,7 @@
 package interfaz_grafica;
 
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
+// import javax.swing.JPanel;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -16,11 +16,12 @@ import operaciones_DAO.ConexionDAO;
 
 import javax.swing.JTextField;
 
-import java.awt.BorderLayout;
+// import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Graphics;
+// import java.awt.Graphics;
+import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -424,12 +425,13 @@ public class InterfazFormulario extends javax.swing.JFrame {
 	}// GEN-LAST:event_jTextFieldUsuarioActionPerformed
 
 	private void jButtonSignInActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButtonSignInActionPerformed
-		boolean existe = Cliente.existeCodClienteLogIn(Integer.parseInt(jTextFieldUsuario.getText().toString()));
-		boolean contrasenaCorrecta = Cliente.comprobarContrasena(jTextFieldContrasena.getText().toString(),
-				Integer.parseInt(jTextFieldUsuario.getText().toString()));
 		if (jTextFieldContrasena.getText().isEmpty() || jTextFieldUsuario.getText().isEmpty())
 			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.", "Error", JOptionPane.WARNING_MESSAGE);
 		else {
+			boolean existe = Cliente.existeCodClienteLogIn(Integer.parseInt(jTextFieldUsuario.getText().toString()));
+			boolean contrasenaCorrecta = Cliente.comprobarContrasena(jTextFieldContrasena.getText().toString(),
+					Integer.parseInt(jTextFieldUsuario.getText().toString()));
+
 			if (existe == false)
 				JOptionPane.showMessageDialog(this, "El usuario introducido no existe.", "Error",
 						JOptionPane.WARNING_MESSAGE);
@@ -438,35 +440,25 @@ public class InterfazFormulario extends javax.swing.JFrame {
 					JOptionPane.showMessageDialog(this, "La contraseña no es correcta.", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				else {
-					
-					// InterfazImagen it = new InterfazImagen();
-					// it.setVisible(true);
-					// this.removeAll();
-					// this.add(it, BorderLayout.CENTER);
-					// this.revalidate();
-					// this.repaint();					
-					
-					// this.getContentPane().add(it);
 					// JOptionPane.showMessageDialog(this, "Login correcto.");
-					// VentanaImagen frame = new VentanaImagen();
-					// frame.setVisible(true);
-					// "." + File.separator + "img" + File.separator + "Bienvenido.png"
-					// BufferedImage myPicture = ImageIO.read(new File("." + File.separator + "img"
-					// + File.separator + "Bienvenido.png"));
-					// JLabel picLabel = new JLabel(new ImageIcon(myPicture));
-					/*
-					 * JLabel picLabel = new JLabel(); picLabel.setIcon(new javax.swing.ImageIcon(
-					 * getClass().getResource("." + File.separator + "img" + File.separator +
-					 * "Bienvenido.png"))); add(picLabel); picLabel.setVisible(true);
-					 */
-					/*
-					 * JFrame frame = new JFrame(); frame.add(new VentanaImagen());
-					 * frame.setVisible(true); frame.setPreferredSize(new Dimension(200, 300));
-					 */
-					/*
-					 * VentanaImagen imagen = new VentanaImagen(); jPanel1.add(imagen);
-					 * jPanel1.repaint(); imagen.setVisible(true);
-					 */
+					BufferedImage myPicture;
+					try {
+						myPicture = ImageIO
+								.read(new File("." + File.separator + "img" + File.separator + "Bienvenido.png"));
+						JLabel picLabel = new JLabel(new ImageIcon(myPicture));
+						JFrame frame = new JFrame();
+
+						Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+						frame.add(picLabel);
+						frame.setSize(pantalla.width / 2, pantalla.height / 2);
+						frame.setLocationRelativeTo(null);
+						frame.setVisible(true);
+						jTextFieldUsuario.setText("");
+						jTextFieldContrasena.setText("");
+					} catch (IOException e) {
+						System.err.println("\nERROR EN EL JLabel.");
+						e.printStackTrace();
+					}
 				}
 			}
 		}
@@ -491,11 +483,9 @@ public class InterfazFormulario extends javax.swing.JFrame {
 	}// GEN-LAST:event_jRadioButtonAvenidaActionPerformed
 
 	private void jButtonSignUpActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButtonSignUpActionPerformed
-		// || jRadioButtonAvenida.isSelected() || jRadioButtonBoulevard.isSelected() ||
-		// jRadioButtonCalle.isSelected()
 		if (jTextFieldNombreCliente.getText().isEmpty() || jTextFieldNombreContacto.getText().isEmpty()
 				|| jTextFieldTelefonoContacto.getText().isEmpty() || jTextFieldFax.getText().isEmpty()) {
-			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.(Registro)", "Error",
+			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.", "Error",
 					JOptionPane.WARNING_MESSAGE);
 		} else {
 			boolean existe = Cliente.comprobarExisteCliente(jTextFieldNombreCliente.getText().toString());
@@ -520,6 +510,10 @@ public class InterfazFormulario extends javax.swing.JFrame {
 				ClienteDAO.setConexion(ConexionDAO.getConexion());
 				ClienteDAO.registrarCliente(c);
 				JOptionPane.showMessageDialog(this, "Cliente registrado correctamente.");
+				jTextFieldNombreCliente.setText("");
+				jTextFieldNombreContacto.setText("");
+				jTextFieldTelefonoContacto.setText("");
+				jTextFieldFax.setText("");
 			}
 		}
 	}// GEN-LAST:event_jButtonSignUpActionPerformed
@@ -527,46 +521,36 @@ public class InterfazFormulario extends javax.swing.JFrame {
 	/**
 	 * @param args the command line arguments
 	 */
-	public static void main(String args[]) {
-		/* Set the Nimbus look and feel */
-		// <editor-fold defaultstate="collapsed" desc=" Look and feel setting code
-		// (optional) ">
-		/*
-		 * If Nimbus (introduced in Java SE 6) is not available, stay with the default
-		 * look and feel. For details see
-		 * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-		 */
-		try {
-			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-				if ("Nimbus".equals(info.getName())) {
-					javax.swing.UIManager.setLookAndFeel(info.getClassName());
-					break;
-				}
-			}
-		} catch (ClassNotFoundException ex) {
-			java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(java.util.logging.Level.SEVERE,
-					null, ex);
-		} catch (InstantiationException ex) {
-			java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(java.util.logging.Level.SEVERE,
-					null, ex);
-		} catch (IllegalAccessException ex) {
-			java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(java.util.logging.Level.SEVERE,
-					null, ex);
-		} catch (javax.swing.UnsupportedLookAndFeelException ex) {
-			java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(java.util.logging.Level.SEVERE,
-					null, ex);
-		}
-		// </editor-fold>
-
-		/* Create and display the form */
-		java.awt.EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				InterfazFormulario fm = new InterfazFormulario();
-				fm.setVisible(true);
-				fm.setLocationRelativeTo(null);
-			}
-		});
-	}
+	/*
+	 * public static void main(String args[]) { Set the Nimbus look and feel //
+	 * <editor-fold defaultstate="collapsed" desc=" Look and feel setting code //
+	 * (optional) ">
+	 * 
+	 * If Nimbus (introduced in Java SE 6) is not available, stay with the default
+	 * look and feel. For details see
+	 * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+	 * 
+	 * try { for (javax.swing.UIManager.LookAndFeelInfo info :
+	 * javax.swing.UIManager.getInstalledLookAndFeels()) { if
+	 * ("Nimbus".equals(info.getName())) {
+	 * javax.swing.UIManager.setLookAndFeel(info.getClassName()); break; } } } catch
+	 * (ClassNotFoundException ex) {
+	 * java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(
+	 * java.util.logging.Level.SEVERE, null, ex); } catch (InstantiationException
+	 * ex) {
+	 * java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(
+	 * java.util.logging.Level.SEVERE, null, ex); } catch (IllegalAccessException
+	 * ex) {
+	 * java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(
+	 * java.util.logging.Level.SEVERE, null, ex); } catch
+	 * (javax.swing.UnsupportedLookAndFeelException ex) {
+	 * java.util.logging.Logger.getLogger(InterfazFormulario.class.getName()).log(
+	 * java.util.logging.Level.SEVERE, null, ex); } // </editor-fold>
+	 * 
+	 * Create and display the form java.awt.EventQueue.invokeLater(new Runnable() {
+	 * public void run() { InterfazFormulario fm = new InterfazFormulario();
+	 * fm.setVisible(true); fm.setLocationRelativeTo(null); } }); }
+	 */
 
 	// Variables declaration - do not modify//GEN-BEGIN:variables
 	private javax.swing.JButton jButtonSignIn;

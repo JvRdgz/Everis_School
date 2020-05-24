@@ -15,6 +15,8 @@ import operaciones_DAO.ClienteDAO;
 import operaciones_DAO.ConexionDAO;
 
 import javax.swing.JTextField;
+
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -436,7 +438,16 @@ public class InterfazFormulario extends javax.swing.JFrame {
 					JOptionPane.showMessageDialog(this, "La contraseña no es correcta.", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				else {
-					JOptionPane.showMessageDialog(this, "Login correcto.");
+					
+					// InterfazImagen it = new InterfazImagen();
+					// it.setVisible(true);
+					// this.removeAll();
+					// this.add(it, BorderLayout.CENTER);
+					// this.revalidate();
+					// this.repaint();					
+					
+					// this.getContentPane().add(it);
+					// JOptionPane.showMessageDialog(this, "Login correcto.");
 					// VentanaImagen frame = new VentanaImagen();
 					// frame.setVisible(true);
 					// "." + File.separator + "img" + File.separator + "Bienvenido.png"

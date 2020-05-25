@@ -49,6 +49,7 @@ public class Mail {
 			transporte.sendMessage(mensaje, mensaje.getAllRecipients()); // ENVIAMOS EL MENSAJE
 
 			transporte.close(); // CERRAMOS LA CONEXION
+			System.out.println("\nCorreo enviado!");
 		} catch (MessagingException e) {
 			System.err.println("\n\tERROR AL ENVIAR EL CORREO");
 			Logger.getLogger(Mail.class.getName()).log(Level.SEVERE, null, e);

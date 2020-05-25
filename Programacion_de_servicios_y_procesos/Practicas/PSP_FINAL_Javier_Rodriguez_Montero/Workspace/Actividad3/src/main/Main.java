@@ -9,6 +9,7 @@ public class Main {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
+		// PIDO DATOS DE CORREO EMISOR, RECEPTOR, CONTRASENA, ASUNTO Y TEXTO DEL MENSAJE.
 		System.out.println("\n\tACTIVIDAD 3 UNIDAD 4\n");
 		System.out.println("Introduce un correo emisor:");
 		String correoEmisor = sc.nextLine();
@@ -33,6 +34,7 @@ public class Main {
 		tipoDeCorreo(op, correoEmisor, contrasenaEmisor, correoReceptor, asunto, mensaje);
 	}
 
+	// SEGUN LA OPCION INTRODUCIDA, LLAMA A LA FUNCION CON ADJUNTO O SIN ADJUNTO.
 	private static void tipoDeCorreo(int op, String correoEmisor, String contrasenaEmisor, String correoReceptor,
 			String asunto, String cuerpoMensaje) {
 		if (op == 1) {

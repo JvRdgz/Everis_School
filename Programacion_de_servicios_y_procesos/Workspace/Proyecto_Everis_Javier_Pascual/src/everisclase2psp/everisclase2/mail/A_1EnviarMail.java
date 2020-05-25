@@ -51,7 +51,7 @@ public class A_1EnviarMail {
 			mensaje.setFrom(new InternetAddress("se.sale2020@gmail.com"));
 
 			// Añadimos el recipiente al mensaje al que va a ir dirigido el mensaje
-			mensaje.addRecipient(Message.RecipientType.TO, new InternetAddress("destinatario"));
+			mensaje.addRecipient(Message.RecipientType.TO, new InternetAddress("se.sale2020@gmail.com"));
 
 			// Creamos el asunto del mensaje
 			mensaje.setSubject("Ejemplo con java mail");

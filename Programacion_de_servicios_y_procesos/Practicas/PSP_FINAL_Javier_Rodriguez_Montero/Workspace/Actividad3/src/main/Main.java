@@ -9,7 +9,8 @@ public class Main {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		// PIDO DATOS DE CORREO EMISOR, RECEPTOR, CONTRASENA, ASUNTO Y TEXTO DEL MENSAJE.
+		// PIDO DATOS DE CORREO EMISOR, RECEPTOR, CONTRASENA, ASUNTO Y TEXTO DEL
+		// MENSAJE.
 		System.out.println("\n\tACTIVIDAD 3 UNIDAD 4\n");
 		System.out.println("Introduce un correo emisor:");
 		String correoEmisor = sc.nextLine();

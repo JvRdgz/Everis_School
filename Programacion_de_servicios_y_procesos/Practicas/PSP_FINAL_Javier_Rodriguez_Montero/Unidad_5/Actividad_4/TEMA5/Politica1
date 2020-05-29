@@ -1,0 +1,8 @@
+/* AUTOMATICALLY GENERATED ON Fri May 29 17:10:14 CEST 2020*/
+/* DO NOT EDIT */
+
+grant {
+  permission java.io.FilePermission "c:/TEMA5/Fichero1.txt", "read, write, delete, execute";
+  permission java.io.FilePermission "c:/TEMA5/Fichero2.txt", "read, write, delete, execute";
+};
+

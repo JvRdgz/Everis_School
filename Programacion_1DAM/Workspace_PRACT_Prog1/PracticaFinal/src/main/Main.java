@@ -1,19 +1,28 @@
 package main;
 
-// import java.util.ArrayList;
-
-// import clases.Cliente;
 import interfaz_grafica.InterfazFormulario;
-// import operaciones_DAO.ClienteDAO;
-// import operaciones_DAO.ConexionDAO;
 
 public class Main {
 
 	public static void main(String[] args) {
+
 		InterfazFormulario fm = new InterfazFormulario();
 		fm.setVisible(true);
 		fm.setLocationRelativeTo(null);
-		
+
+		/*
+		 * ProductoDAO.setConexion(ConexionDAO.getConexion()); ArrayList<Producto>
+		 * productos = new ArrayList<Producto>(); productos =
+		 * ProductoDAO.consultarProductos();
+		 * 
+		 * Producto p[][] = new Producto[productos.size()][9];
+		 */
+
+		/*
+		 * for (int i = 0; i < productos.size(); i++) {
+		 * System.out.println(productos.get(i)); }
+		 */
+
 		/*
 		 * double lim_credito = 15.35; String str = String.valueOf(lim_credito); int
 		 * parte_entera = Integer.parseInt(str.substring(0, str.indexOf('.'))); // SI DA

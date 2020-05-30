@@ -27,7 +27,7 @@ public class Cliente {
 			String ciudad) {
 		// AL NO SER EL codigo_cliente AUTOINCREMENT EN LA BBDD,
 		// TENGO QUE GUARDARLO DE FORMA AUTOMATICA A PARTIR DEL VALOR DEL ULTIMO CLIENTE
-		this.codigo_cliente = getUltimoCodigoCliete() + 1;
+		this.codigo_cliente = getUltimoCliente() + 1;
 		this.nombre_cliente = nombre_cliente;
 		this.nombre_contacto = nombre_contacto;
 		this.apellido_contacto = null;
@@ -66,7 +66,7 @@ public class Cliente {
 
 	// DEVUELVE EL CODIGO DE CLIENTE DEL ULTIMO CLIENTE INSERTADO EN LA BASE DE
 	// DATOS.
-	private int getUltimoCodigoCliete() {
+	private int getUltimoCliente() {
 		int codCliente = 0;
 		ClienteDAO.setConexion(ConexionDAO.getConexion());
 		ArrayList<Cliente> arrCliente = new ArrayList<Cliente>();

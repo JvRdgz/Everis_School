@@ -1,12 +1,9 @@
 package interfaz_grafica;
 
 import javax.swing.JOptionPane;
-// import javax.swing.JPanel;
+
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.imageio.ImageIO;
+
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
@@ -18,13 +15,8 @@ import javax.swing.JTextField;
 
 // import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 // import java.awt.Graphics;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 /**
  *
@@ -441,24 +433,51 @@ public class InterfazFormulario extends javax.swing.JFrame {
 							JOptionPane.ERROR_MESSAGE);
 				else {
 					// JOptionPane.showMessageDialog(this, "Login correcto.");
-					BufferedImage myPicture;
-					try {
-						myPicture = ImageIO
-								.read(new File("." + File.separator + "img" + File.separator + "Bienvenido.png"));
-						JLabel picLabel = new JLabel(new ImageIcon(myPicture));
-						JFrame frame = new JFrame();
+					/*
+					 * BufferedImage myPicture; try { myPicture = ImageIO .read(new File("." +
+					 * File.separator + "img" + File.separator + "Bienvenido.png")); JLabel picLabel
+					 * = new JLabel(new ImageIcon(myPicture)); JFrame frame = new JFrame();
+					 * 
+					 * Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+					 * frame.add(picLabel); frame.setSize(pantalla.width / 2, pantalla.height / 2);
+					 * frame.setLocationRelativeTo(null); frame.setVisible(true);
+					 * jTextFieldUsuario.setText(""); jTextFieldContrasena.setText(""); } catch
+					 * (IOException e) { System.err.println("\nERROR EN EL JLabel.");
+					 * e.printStackTrace(); }
+					 */
+					/*
+					 * String[] columnas = { "Codigo de producto", "Nombre", "Gama", "Dimensiones",
+					 * "Proveedor", "Descripcion", "Cantidad en stock", "Precio de venta",
+					 * "Precio del proveedor", "Añadir" }; ArrayList<Producto> arr_producto = new
+					 * ArrayList<Producto>(); ProductoDAO.setConexion(ConexionDAO.getConexion());
+					 * arr_producto = ProductoDAO.consultarProductos(); JFrame frame = new
+					 * JFrame("Tabla de productos"); DefaultTableModel tableModel = new
+					 * DefaultTableModel(columnas, 0);
+					 * 
+					 * for (int i = 0; i < arr_producto.size(); i++) { String codigoProducto =
+					 * arr_producto.get(i).getCodigo_producto(); String nombre =
+					 * arr_producto.get(i).getNombre(); String gama = arr_producto.get(i).getGama();
+					 * String dimensiones = arr_producto.get(i).getDimensiones(); String proveedor =
+					 * arr_producto.get(i).getProveedor(); String descripcion =
+					 * arr_producto.get(i).getDescripcion(); int cantidadStock =
+					 * arr_producto.get(i).getCantidadEnStock(); int precioVenta =
+					 * arr_producto.get(i).getPrecioVenta(); int precioProveedor =
+					 * arr_producto.get(i).getPrecioProveedor(); Object [] producto =
+					 * {codigoProducto, nombre, gama, dimensiones, proveedor, descripcion,
+					 * cantidadStock, precioVenta, precioProveedor};
+					 * 
+					 * tableModel.addRow(producto); }
+					 * 
+					 * frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); JTable table = new
+					 * JTable(tableModel); JScrollPane scrollPane = new JScrollPane(table);
+					 * frame.add(scrollPane); table.setOpaque(true); frame.setContentPane(table);
+					 * frame.pack(); frame.setVisible(true);
+					 */
+					// table.setPreferredScrollableViewportSize(new Dimension(500, 70));
+					// table.setFillsViewportHeight(true);
+					// frame.setLocationRelativeTo(null);
 
-						Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
-						frame.add(picLabel);
-						frame.setSize(pantalla.width / 2, pantalla.height / 2);
-						frame.setLocationRelativeTo(null);
-						frame.setVisible(true);
-						jTextFieldUsuario.setText("");
-						jTextFieldContrasena.setText("");
-					} catch (IOException e) {
-						System.err.println("\nERROR EN EL JLabel.");
-						e.printStackTrace();
-					}
+					JTableTest.createAndShowGUI();
 				}
 			}
 		}
@@ -485,8 +504,7 @@ public class InterfazFormulario extends javax.swing.JFrame {
 	private void jButtonSignUpActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButtonSignUpActionPerformed
 		if (jTextFieldNombreCliente.getText().isEmpty() || jTextFieldNombreContacto.getText().isEmpty()
 				|| jTextFieldTelefonoContacto.getText().isEmpty() || jTextFieldFax.getText().isEmpty()) {
-			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.", "Error",
-					JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(this, "No puede haber campos vacios.", "Error", JOptionPane.WARNING_MESSAGE);
 		} else {
 			boolean existe = Cliente.comprobarExisteCliente(jTextFieldNombreCliente.getText().toString());
 			if (existe == true) {

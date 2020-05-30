@@ -8,7 +8,7 @@ public class ConexionDAO {
 
 	public static Connection conexion;
 	static String bd = "jardineria";
-	static String user = "jarodrig";
+	static String user = "root";
 	static String password = "password";
 	static String host = "127.0.0.1";
 	static String url = String.format("jdbc:mysql://%s/%s?useSSL=false", host, bd); // NO ES NECESARIO INCLUIR EL PUERTO

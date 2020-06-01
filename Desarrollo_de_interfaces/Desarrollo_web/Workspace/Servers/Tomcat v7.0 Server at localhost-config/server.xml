@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="MiPrimeraWeb" path="/MiPrimeraWeb" reloadable="true" source="org.eclipse.jst.jee.server:MiPrimeraWeb"/><Context docBase="CURSO_WEB" path="/CURSO_WEB" reloadable="true" source="org.eclipse.jst.jee.server:CURSO_WEB"/><Context docBase="DII_P1_Javier_Rodriguez_Montero" path="/DII_P1_Javier_Rodriguez_Montero" reloadable="true" source="org.eclipse.jst.jee.server:DII_P1_Javier_Rodriguez_Montero"/></Host>
+      <Context docBase="MiPrimeraWeb" path="/MiPrimeraWeb" reloadable="true" source="org.eclipse.jst.jee.server:MiPrimeraWeb"/><Context docBase="CURSO_WEB" path="/CURSO_WEB" reloadable="true" source="org.eclipse.jst.jee.server:CURSO_WEB"/><Context docBase="DII_P1_Javier_Rodriguez_Montero" path="/DII_P1_Javier_Rodriguez_Montero" reloadable="true" source="org.eclipse.jst.jee.server:DII_P1_Javier_Rodriguez_Montero"/><Context docBase="DII_P2_Javier_Rodriguez_Montero" path="/DII_P2_Javier_Rodriguez_Montero" reloadable="true" source="org.eclipse.jst.jee.server:DII_P2_Javier_Rodriguez_Montero"/></Host>
     </Engine>
   </Service>
 </Server>

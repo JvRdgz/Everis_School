@@ -27,9 +27,12 @@ public class Redireccion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("servlet");
-		
 		request.setAttribute("servletMsg", "este es el mensaje nuevo");
+		// MEDIANTE EL 'getRequestDispatcher' SI PUEDO ENVIAR LOS ATRIBUTOS SIN NECESIDAD DE ESTAR EN UNA
+		// SESION.
 		//request.getRequestDispatcher("/jsp/06_redireccion/redireccionado.jsp").forward(request, response);
+		// DE ESTA FORMA NO PUEDO RECOGER LOS ATRIBUTOS, DADO QUE NO ESTOY EN UNA SESION, Y ADEMAS EL
+		// sendRedirect, NO ME PERMITE ENVIAR LOS ARTRIBUTOS.
 		response.sendRedirect(request.getContextPath() + "/jsp/06_redireccion/redireccionado.jsp");
 	}
 

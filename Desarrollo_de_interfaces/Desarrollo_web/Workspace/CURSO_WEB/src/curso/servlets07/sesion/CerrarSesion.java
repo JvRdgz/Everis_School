@@ -13,37 +13,41 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/cerrarsesion")
 public class CerrarSesion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public CerrarSesion() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public CerrarSesion() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doPost(request, response);
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 		String mensaje = (String) request.getSession().getAttribute("nombre");
-		System.out.println("cerrar sesión: " + mensaje);
-		
-		//invalidar atributo (deslogar)
+		System.out.println("cerrar sesiï¿½n: " + mensaje);
+
+		// invalidar atributo (deslogar)
 		request.getSession().setAttribute("nombre", null);
-		//request.getSession().invalidate();
-		
+		// request.getSession().invalidate();
+
 		mensaje = (String) request.getSession().getAttribute("nombre");
-		System.out.println("cerrar sesión: " + mensaje);
-		
+		System.out.println("cerrar sesiï¿½n: " + mensaje);
+
 		response.sendRedirect(request.getContextPath() + "/jsp/07_sesion/sesion2.jsp");
 	}
 

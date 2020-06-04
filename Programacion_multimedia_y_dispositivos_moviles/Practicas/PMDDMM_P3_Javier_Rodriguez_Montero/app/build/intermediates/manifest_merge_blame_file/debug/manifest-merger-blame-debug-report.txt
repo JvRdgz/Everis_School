@@ -1,0 +1,65 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.example.pmddmm_p3_javier_rodriguez_montero"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="26"
+9-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="28" />
+10-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+11
+12    <dist:module dist:instant="true" />
+12-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:6:5-40
+12-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:6:18-37
+13
+14    <application
+14-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:8:5-26:19
+15        android:allowBackup="true"
+15-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/032360533aed7f4773dde0d69318c0bd/core-1.0.1/AndroidManifest.xml:22:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:10:9-43
+20        android:label="@string/app_name"
+20-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:12:9-54
+22        android:supportsRtl="true"
+22-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:14:9-40
+25        <activity android:name="com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityEnesimo" />
+25-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:15:9-57
+25-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:15:19-54
+26        <activity android:name="com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityDiaNoche" />
+26-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:16:9-58
+26-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:16:19-55
+27        <activity android:name="com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityConversor" />
+27-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:17:9-59
+27-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:17:19-56
+28        <activity android:name="com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityWebView" />
+28-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:18:9-57
+28-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:18:19-54
+29        <activity android:name="com.example.pmddmm_p3_javier_rodriguez_montero.MainActivity" >
+29-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:19:9-25:20
+29-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:19:19-47
+30            <intent-filter>
+30-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:20:13-24:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:21:17-69
+31-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:21:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:23:17-77
+33-->/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:23:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

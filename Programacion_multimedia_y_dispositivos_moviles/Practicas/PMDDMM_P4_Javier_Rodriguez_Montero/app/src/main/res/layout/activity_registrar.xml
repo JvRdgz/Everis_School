@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009db1"
+    tools:context=".RegistrarActivity">
+
+    <Button
+        android:id="@+id/buttonRegistrarRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#007381"
+        android:onClick="registrar"
+        android:text="@string/buttonLogIn"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediTextRegistrarseContrasenaUsuarioRep" />
+
+    <EditText
+        android:id="@+id/ediTextRegistrarseContrasenaUsuarioRep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/ediTextRegistrarseContrasenaUsuarioRep"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#007381"
+        android:textColorLink="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediTextRegistrarseContrasenaUsuario" />
+
+    <EditText
+        android:id="@+id/ediTextRegistrarseContrasenaUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/ediTextRegistrarseContrasenaUsuario"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#007381"
+        android:textColorLink="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediTextRegistrarNombreUsuario" />
+
+    <EditText
+        android:id="@+id/ediTextRegistrarNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/ediTextRegistrarNombreUsuario"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#007381"
+        android:textColorLink="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVTituloRegistrarse" />
+
+    <TextView
+        android:id="@+id/txtVTituloRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtVTituloRegistrarse"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

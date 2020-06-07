@@ -1,176 +1,176 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/0d47a0d6fa5764cd649078b15eaac482/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/380cbbd0623e9b22e21961fc6ec82b14/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.fragment:fragment:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/560559a1d2f072346120a8facd149d09/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/9cfddc7e36e5933ee2ea725c9bea78af/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/e40a377249758d23414d21222f000040/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/3dd2a90cf4903229672e8d620934c6ca/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/5c5ff6a9e23a514d622ec485c5d31c27/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/d1290085211f6ca31e4b44ad501b0e7c/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/b685d122498cf50e728d648d063a2ff6/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/0d46da4f5ac771dd79c1a2c9880b8580/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/369c371dbc36cd3420e0891af4dc30b8/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/97f01785cab2549e8be5ef5c8b1dbcb3/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/3584c755b13ff246a30ea06b73bd9d78/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/fee859eac2601f0c53561481b8362e20/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/2d0e89544ecc30a9184b81b65acf458e/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/032360533aed7f4773dde0d69318c0bd/core-1.0.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a3551ab13be12ed63d05f9b0aaa8242a/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a87a91cfc12796be4a5399f6708c1bed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/706aa5d8c8a43873cd63a96842e3a9e8/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/4b326e320f7fb8e89e2bb3879ac950d2/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/ba74e7a1df14494ca70ea72adf4fc3bf/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/5d6ed104b1267309eec087762b08ed9e/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/000772770b31839da1ff8a942bf73abb/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/9c0d2720907bb8bd5d5976efee735314/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/d00c90699ae27cc1e1ce5e4b3e530617/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/13ac386f95e101744ae5f7d486caaa8c/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/30612fa1f33fcbb3e456c3a5f852366f/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\697f71c0c12135256cbfe98df498a7e4\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\61965e5c06bda9445c13760f9d9ef779\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\62ec569ca307aebf19eb528ff2a14917\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c70a8bef3ed62675d42960780f476d6e\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4c7e5b6d46acfb24c04b3a473c53b419\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\94d1bdd9d3f5e77b2c2deb76d0ecef77\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:4:5-61
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:4:5-61
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
 	xmlns:dist
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:3:5-61
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:1-28:12
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:2:11-69
 dist:module
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:6:5-40
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:6:5-40
 	dist:instant
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:6:18-37
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:6:18-37
 application
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:8:5-26:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/380cbbd0623e9b22e21961fc6ec82b14/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/380cbbd0623e9b22e21961fc6ec82b14/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/032360533aed7f4773dde0d69318c0bd/core-1.0.1/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/032360533aed7f4773dde0d69318c0bd/core-1.0.1/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a3551ab13be12ed63d05f9b0aaa8242a/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a3551ab13be12ed63d05f9b0aaa8242a/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:8:5-26:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c70a8bef3ed62675d42960780f476d6e\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c70a8bef3ed62675d42960780f476d6e\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/032360533aed7f4773dde0d69318c0bd/core-1.0.1/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:14:9-40
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityEnesimo
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:15:9-57
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:15:9-57
 	android:name
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:15:19-54
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:15:19-54
 activity#com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityDiaNoche
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:16:9-58
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:16:9-58
 	android:name
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:16:19-55
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:16:19-55
 activity#com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityConversor
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:17:9-59
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:17:9-59
 	android:name
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:17:19-56
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:17:19-56
 activity#com.example.pmddmm_p3_javier_rodriguez_montero.MainActivityWebView
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:18:9-57
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:18:9-57
 	android:name
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:18:19-54
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:18:19-54
 activity#com.example.pmddmm_p3_javier_rodriguez_montero.MainActivity
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:19:9-25:20
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:19:19-47
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:19:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml:23:27-74
 uses-sdk
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat:1.0.2] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/0d47a0d6fa5764cd649078b15eaac482/appcompat-1.0.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/0d47a0d6fa5764cd649078b15eaac482/appcompat-1.0.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/380cbbd0623e9b22e21961fc6ec82b14/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/380cbbd0623e9b22e21961fc6ec82b14/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.fragment:fragment:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/560559a1d2f072346120a8facd149d09/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/560559a1d2f072346120a8facd149d09/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/9cfddc7e36e5933ee2ea725c9bea78af/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/9cfddc7e36e5933ee2ea725c9bea78af/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/e40a377249758d23414d21222f000040/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/e40a377249758d23414d21222f000040/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/3dd2a90cf4903229672e8d620934c6ca/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/3dd2a90cf4903229672e8d620934c6ca/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/5c5ff6a9e23a514d622ec485c5d31c27/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/5c5ff6a9e23a514d622ec485c5d31c27/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/d1290085211f6ca31e4b44ad501b0e7c/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/d1290085211f6ca31e4b44ad501b0e7c/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/b685d122498cf50e728d648d063a2ff6/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/b685d122498cf50e728d648d063a2ff6/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/0d46da4f5ac771dd79c1a2c9880b8580/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/0d46da4f5ac771dd79c1a2c9880b8580/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/369c371dbc36cd3420e0891af4dc30b8/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/369c371dbc36cd3420e0891af4dc30b8/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/97f01785cab2549e8be5ef5c8b1dbcb3/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/97f01785cab2549e8be5ef5c8b1dbcb3/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/3584c755b13ff246a30ea06b73bd9d78/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/3584c755b13ff246a30ea06b73bd9d78/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/fee859eac2601f0c53561481b8362e20/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/fee859eac2601f0c53561481b8362e20/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/2d0e89544ecc30a9184b81b65acf458e/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/2d0e89544ecc30a9184b81b65acf458e/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/032360533aed7f4773dde0d69318c0bd/core-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/032360533aed7f4773dde0d69318c0bd/core-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a3551ab13be12ed63d05f9b0aaa8242a/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a3551ab13be12ed63d05f9b0aaa8242a/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a87a91cfc12796be4a5399f6708c1bed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/a87a91cfc12796be4a5399f6708c1bed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/706aa5d8c8a43873cd63a96842e3a9e8/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/706aa5d8c8a43873cd63a96842e3a9e8/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/4b326e320f7fb8e89e2bb3879ac950d2/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/4b326e320f7fb8e89e2bb3879ac950d2/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/ba74e7a1df14494ca70ea72adf4fc3bf/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/ba74e7a1df14494ca70ea72adf4fc3bf/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/5d6ed104b1267309eec087762b08ed9e/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/5d6ed104b1267309eec087762b08ed9e/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/000772770b31839da1ff8a942bf73abb/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/000772770b31839da1ff8a942bf73abb/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/9c0d2720907bb8bd5d5976efee735314/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/9c0d2720907bb8bd5d5976efee735314/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/d00c90699ae27cc1e1ce5e4b3e530617/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/d00c90699ae27cc1e1ce5e4b3e530617/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/13ac386f95e101744ae5f7d486caaa8c/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/13ac386f95e101744ae5f7d486caaa8c/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/30612fa1f33fcbb3e456c3a5f852366f/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jarodrig/.gradle/caches/transforms-2/files-2.1/30612fa1f33fcbb3e456c3a5f852366f/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\697f71c0c12135256cbfe98df498a7e4\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\697f71c0c12135256cbfe98df498a7e4\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\61965e5c06bda9445c13760f9d9ef779\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\61965e5c06bda9445c13760f9d9ef779\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\62ec569ca307aebf19eb528ff2a14917\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\62ec569ca307aebf19eb528ff2a14917\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c70a8bef3ed62675d42960780f476d6e\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c70a8bef3ed62675d42960780f476d6e\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4c7e5b6d46acfb24c04b3a473c53b419\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\4c7e5b6d46acfb24c04b3a473c53b419\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\94d1bdd9d3f5e77b2c2deb76d0ecef77\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\94d1bdd9d3f5e77b2c2deb76d0ecef77\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Javier\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-		ADDED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P3_Javier_Rodriguez_Montero/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Javier\AndroidStudioProjects\PMDDMM_P3_Javier_Rodriguez_Montero\app\src\main\AndroidManifest.xml

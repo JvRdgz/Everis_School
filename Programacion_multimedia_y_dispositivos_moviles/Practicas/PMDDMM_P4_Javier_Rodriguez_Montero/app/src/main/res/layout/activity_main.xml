@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009db1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtVTituloLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtVTituloLogIn"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ediTextLogInNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="@string/ediTextLogInNombreUsuario"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#007381"
+        android:textColorLink="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVTituloLogIn" />
+
+    <EditText
+        android:id="@+id/ediTextLogInContrasenaUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="@string/ediTextLogInContrasenaUsuario"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#007381"
+        android:textColorLink="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediTextLogInNombreUsuario" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#007381"
+        android:onClick="login"
+        android:text="@string/buttonLogIn"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediTextLogInContrasenaUsuario" />
+
+    <Button
+        android:id="@+id/buttonLogInRegistrar"
+        android:layout_width="111dp"
+        android:layout_height="24dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="registrarse"
+        android:text="@string/buttonLogInRegistrar"
+        android:textColor="#0069BC"
+        android:textColorHint="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogIn"
+        app:layout_constraintVertical_bias="0.091" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,11 +6,11 @@
                 {
                     "source": "/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P4_Javier_Rodriguez_Montero/app/src/main/res/values-en/strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,13,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,4,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,754,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,55,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,805,-1,-1"
+                        "startLines": "2,6,7,12,5,4,9,10,11,13,3,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,309,358,696,242,178,473,541,614,754,127,415",
+                        "endColumns": "71,48,56,57,66,63,67,72,81,55,50,57",
+                        "endOffsets": "122,353,410,749,304,237,536,609,691,805,173,468"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",

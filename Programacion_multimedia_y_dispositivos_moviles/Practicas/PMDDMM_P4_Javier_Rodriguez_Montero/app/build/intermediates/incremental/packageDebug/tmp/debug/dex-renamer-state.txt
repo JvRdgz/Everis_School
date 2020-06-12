@@ -1,7 +1,7 @@
-#Fri May 22 23:08:24 CEST 2020
-base.0=/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P4_Javier_Rodriguez_Montero/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Mon Jun 08 18:43:38 CEST 2020
+base.0=/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P4_Javier_Rodriguez_Montero/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P4_Javier_Rodriguez_Montero/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/home/jarodrig/Escritorio/Everis_School/Programacion_multimedia_y_dispositivos_moviles/Practicas/PMDDMM_P4_Javier_Rodriguez_Montero/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex

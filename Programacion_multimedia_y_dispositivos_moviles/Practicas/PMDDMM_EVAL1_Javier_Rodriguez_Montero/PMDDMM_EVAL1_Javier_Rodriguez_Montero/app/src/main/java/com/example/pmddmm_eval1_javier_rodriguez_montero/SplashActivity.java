@@ -16,6 +16,8 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
         // Toast.makeText(this, "Metodo OnCreate del SplashActivity", Toast.LENGTH_LONG).show();
 
+        // this.getSupportActionBar().hide(); PARA ESCONDER EL ACTIONBAR
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
